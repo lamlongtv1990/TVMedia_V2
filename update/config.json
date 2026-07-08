@@ -1,0 +1,14 @@
+{
+    "active": true,
+    "version_code": 2021,
+    "force_update": "",
+    "apk_url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/update/app-release.apk",
+    "whats_new": "- Fix bugs\n- Improve performance\n- Add new features",
+    "min_sdk": 21,
+    "target_sdk": 33,
+    "ls": [
+        "8oEPdjTS9dTbzwzXT16V0wfF4PyTuA2s9mEh+SIVAgjr2KnMP8HoeQ==",
+        "baYA4xQlR64n1bE7tUOe/gEDBxCHyxCIK5tvQqPnsE1o+pjK0BUc9g==",
+        "/lUXFh58r8D0DPQaFVBovQjB0QpopM4BjzfVbCg4BtvdY+xEuUPbhA=="
+    ]
+}
