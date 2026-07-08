@@ -1,37 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 8
-# Generated: 2026-07-08 19:01:30
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 Connahs Quay Nomads FC vs FC Ballkani ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel16
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 Connahs Quay Nomads FC vs FC Ballkani ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel16
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 FC Differdange 03 vs Ilves Tampere ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel18
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 FC Differdange 03 vs Ilves Tampere ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel18
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 Trenkwalder Admira vs Fenerbahce ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel20
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 Trenkwalder Admira vs Fenerbahce ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel20
+# Total streams: 4
+# Generated: 2026-07-08 19:31:14
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Ukraine U19 vs Đức U19 ngày 09/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -42,4 +12,14 @@ https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel22
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
 https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel22
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",02:30 Lausanne Sports vs Flamengo RJ ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel27
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",02:30 Lausanne Sports vs Flamengo RJ ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel27
 
