@@ -1,37 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 14
-# Generated: 2026-07-08 18:31:23
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Maxline Vitebsk vs Univ. Craiova ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel15
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Maxline Vitebsk vs Univ. Craiova ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel15
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 CS Petrocub vs Egnatia ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel19
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 CS Petrocub vs Egnatia ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel19
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 TSV Kornburg vs Nürnberg ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel9
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 TSV Kornburg vs Nürnberg ngày 09/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel9
+# Total streams: 8
+# Generated: 2026-07-08 19:01:30
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 Connahs Quay Nomads FC vs FC Ballkani ngày 09/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
