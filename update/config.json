@@ -2,7 +2,7 @@
     "active": true,
     "version_code": 2021,
     "force_update": "",
-    "apk_url": "https://raw.githubusercontent.com/lockerzlong/androidtv_ltl/main/update/app-release.apk",
+    "apk_url": "https://raw.githubusercontent.com/lamlongtv1990/TVMedia_V2/main/update/TVMedia_Version2.apk",
     "whats_new": "- Fix bugs\n- Improve performance\n- Add new features",
     "min_sdk": 21,
     "target_sdk": 33,
