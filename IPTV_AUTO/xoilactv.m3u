@@ -1,7 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 2
-# Generated: 2026-07-08 20:01:25
+# Total streams: 14
+# Generated: 2026-07-08 20:31:24
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",02:30 Lausanne Sports vs Flamengo RJ ngày 09/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -12,4 +12,64 @@ https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel27
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
 https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel27
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Delaware vs Eagle FC ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel22
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Delaware vs Eagle FC ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel22
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Real Oruro vs UD Vinto ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel27
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Real Oruro vs UD Vinto ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel27
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:30 Vargas Torres vs Ind. del Valle ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel28
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:30 Vargas Torres vs Ind. del Valle ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel28
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Union La Calera vs Coquimbo Unido ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel13
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Union La Calera vs Coquimbo Unido ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel13
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Hartford Athletic vs Orange County ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel14
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Hartford Athletic vs Orange County ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel14
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Ponte Preta vs Criciuma ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/8/link/channel8
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:00 Ponte Preta vs Criciuma ngày 09/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://xlz.buzzscorelinez.com/ajax/chanel/type/5/link/channel8
 
