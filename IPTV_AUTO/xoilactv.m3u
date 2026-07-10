@@ -1,7 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 8
-# Generated: 2026-07-11 04:31:11 (GMT+7)
+# Total streams: 10
+# Generated: 2026-07-11 05:31:08 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Leones del Norte vs Universidad Católica ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -11,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Leones del Norte vs Universidad Católica ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783719064-0-0-42eda0966f698feb17a4a6edfe29bd7d
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783722663-0-0-ce3fdb30f6ed391e767e35c1f52b1b7a
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Juventude vs Vila Nova ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel28.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Juventude vs Vila Nova ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783719066-0-0-6827e1eee7aadf67c3ec73d771ecce3b
+https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783722664-0-0-c8fb7210af2438acd867acba8a5467f9
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +31,7 @@ https://live2.pro2cdnlive.com/live/channel27.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783719068-0-0-f0f8534f5bb3b486787e58669aea5633
+https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783722665-0-0-fc7f32cec4d25fe61fd8f8c4ddbc622d
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,5 +41,15 @@ https://live2.pro2cdnlive.com/live/channel8.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783719070-0-0-aaab01a6411f60868de81f5037e88412
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783722666-0-0-8121939dda97d520de6886711208160b
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:15 Tecnico Uni. vs Macara ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel20.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:15 Tecnico Uni. vs Macara ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783722668-0-0-f70750cbe92fe5019683dfe6baacbe2e
 
