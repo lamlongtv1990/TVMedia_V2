@@ -1,165 +1,45 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 32
-# Generated: 2026-07-11 03:31:15 (GMT+7)
+# Total streams: 8
+# Generated: 2026-07-11 04:31:11 (GMT+7)
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Leones del Norte vs Universidad Católica ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.pro2cdnlive.com/live/channel1.flv?wsSecret=637b622fdf38b8ea63e9d2b29e015caf&wsABSTime=1783758663
+https://live2.pro2cdnlive.com/live/channel21.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Leones del Norte vs Universidad Católica ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel1.flv?auth_key=3000001783715463-0-0-6311cc6bce10ea55066a2b0afa07b346
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783719064-0-0-42eda0966f698feb17a4a6edfe29bd7d
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.pro2cdnlive.com/live/channel5.flv?wsSecret=7c80c8fd720858d59dadb553ec3600b0&wsABSTime=1783758663
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel5.flv?auth_key=3000001783715464-0-0-3db3b5333a0e817fc4c2cf861ba06cc0
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel15.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel15.flv?auth_key=3000001783715465-0-0-fb07a34376f4946c469d95f158aead3f
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel19.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel19.flv?auth_key=3000001783715465-0-0-c8a85521065b7f98d3a4b49a82c86b25
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.pro2cdnlive.com/live/channel18.flv?wsSecret=fbf430a70f82b883811dc1b42741a9a8&wsABSTime=1783758666
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001783715466-0-0-0780dd4d5d88770712c234cd15f68afe
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.pro2cdnlive.com/live/channel16.flv?wsSecret=09f163075404b3ea7b3e8a2ecfd4c1c3&wsABSTime=1783758666
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001783715467-0-0-44d6c019e6784b61fef08763368e75a1
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel17.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783715467-0-0-8d98df70d4de4135b0621de1e826b60b
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel4.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783715468-0-0-39cbfa7ed092169a316ad447c8c4109a
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel14.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783715469-0-0-7993e49c2be8afc2b5b19d77899c90ee
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.pro2cdnlive.com/live/channel9.flv?wsSecret=4ec914f03e8c29b7ec11e9f87cc822f8&wsABSTime=1783758669
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783715469-0-0-20e6757cd796b6ddbb5a8eea8cbaeded
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel22.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783715470-0-0-0cddaffc6bdf85879f7b396b47f575d4
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.pro2cdnlive.com/live/channel12.flv?wsSecret=e7774b669a31035b7a8bb109c47a32c8&wsABSTime=1783758670
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783715470-0-0-1c515209ba2b08326e88706855aaa17e
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel11.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783715471-0-0-76c29a7a208b209400089b982681c427
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.pro2cdnlive.com/live/channel6.flv?wsSecret=db2b2cc93cc552bc974e2e1a5aaf8736&wsABSTime=1783758671
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Tây Ban Nha vs Bỉ ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783715471-0-0-979a354c1cd45412d1da7897ff6c8c70
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",01:45 Dundalk vs Drogheda Utd ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel13.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",01:45 Dundalk vs Drogheda Utd ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783715473-0-0-898c7fe1ccfd06a4c42ac6b3338b584e
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",02:00 Waterford United vs St. Patricks ngày 11/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Juventude vs Vila Nova ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
 https://live2.pro2cdnlive.com/live/channel28.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",02:00 Waterford United vs St. Patricks ngày 11/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Juventude vs Vila Nova ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783715475-0-0-e616de6ce5d0a3fd4b6cb47f9c294dc1
+https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783719066-0-0-6827e1eee7aadf67c3ec73d771ecce3b
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel27.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783719068-0-0-f0f8534f5bb3b486787e58669aea5633
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel8.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783719070-0-0-aaab01a6411f60868de81f5037e88412
 
