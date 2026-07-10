@@ -16,103 +16,72 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ============================================
 # CẤU HÌNH
 # ============================================
-BASE_URL = "https://xoilac365ll.cc"
+BASE_URL = "https://gnolia.com"
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
 
 # ============================================
-# PROXY CONFIG - CHỈ TẬP TRUNG VÀO PROXY
+# PROXY CONFIG
 # ============================================
 USE_PROXY = True
 VIETNAM_TZ = timezone(timedelta(hours=7))
-
-# DANH SÁCH PROXY HOẠT ĐỘNG (CẬP NHẬT LIÊN TỤC)
 PROXY_LIST = [
-    # Proxy VN
-    "http://113.160.132.26:8080",
-    "http://202.28.194.139:31280",
-    "http://137.59.47.73:3128",
-    "socks5://160.22.17.4:9988",
-    
-    # Proxy quốc tế
-    "http://1.231.81.166:3128",
-    "http://37.49.224.15:3128",
-    "http://185.141.26.131:3128",
-    "http://185.200.188.234:10001",
+    "http://113.160.132.26:8080",        # VN - Elite, ổn định nhất
+    "http://202.28.194.139:31280",       # VN
+    "http://137.59.47.73:3128",          # VN - Transparent
+    "socks5://160.22.17.4:9988",         # VN - SOCKS5
+    "http://1.231.81.166:3128",          # KR
+    "http://37.49.224.15:3128",          # EE
+    "http://185.141.26.131:3128",        # RO
+    "http://185.200.188.234:10001",      # RU
 ]
 
 session = requests.Session()
 session.verify = False
 
-# Session fallback khi proxy lỗi
 fallback_session = requests.Session()
 fallback_session.verify = False
 fallback_session.headers.update({'Accept-Encoding': 'identity'})
 
 def get_vietnam_time():
+    """Lấy thời gian hiện tại theo múi giờ Việt Nam (UTC+7)"""
     return datetime.now(VIETNAM_TZ)
+# ============================================
+# PROXY FUNCTIONS
+# ============================================
+def get_random_proxy():
+    if not USE_PROXY or not PROXY_LIST:
+        return None
+    vn_proxies = [p for p in PROXY_LIST if '113.160.132.26' in p or '202.28.194.139' in p]
+    if vn_proxies and random.random() < 0.7:
+        proxy_str = random.choice(vn_proxies)
+    else:
+        proxy_str = random.choice(PROXY_LIST)
+    return {"http": proxy_str, "https": proxy_str}
 
-# ============================================
-# PROXY FUNCTIONS - KIỂM TRA VÀ LỌC PROXY SỐNG
-# ============================================
 def check_proxy(proxy_dict):
-    """Kiểm tra proxy có hoạt động không"""
     if not proxy_dict:
         return False
     try:
         test_url = "https://httpbin.org/ip"
         response = requests.get(test_url, proxies=proxy_dict, timeout=10, verify=False)
-        if response.status_code == 200:
-            print(f"   ✅ Proxy hoạt động: {proxy_dict['http']}")
-            return True
-    except Exception as e:
-        print(f"   ❌ Proxy chết: {proxy_dict['http']} - {str(e)[:50]}")
-    return False
-
-def get_working_proxy():
-    """Lấy proxy đang hoạt động"""
-    if not USE_PROXY or not PROXY_LIST:
-        return None
-    
-    # Xáo trộn danh sách để tránh dùng cùng 1 proxy
-    shuffled = PROXY_LIST.copy()
-    random.shuffle(shuffled)
-    
-    for proxy_str in shuffled:
-        proxy_dict = {"http": proxy_str, "https": proxy_str}
-        if check_proxy(proxy_dict):
-            return proxy_dict
-    
-    print("⚠️ Không có proxy nào hoạt động!")
-    return None
-
-def get_random_proxy():
-    """Lấy proxy ngẫu nhiên (không kiểm tra)"""
-    if not USE_PROXY or not PROXY_LIST:
-        return None
-    
-    proxy_str = random.choice(PROXY_LIST)
-    return {"http": proxy_str, "https": proxy_str}
+        return response.status_code == 200
+    except:
+        return False
 
 # ============================================
-# HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG (DÙNG PROXY)
+# HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
 # ============================================
-def get_actual_base_url():
-    proxies = get_working_proxy() if USE_PROXY else None
-    
+def get_actual_base_url(use_proxy=False):
     try:
-        response = session.get(
-            BASE_URL, 
-            allow_redirects=True, 
-            timeout=20, 
-            proxies=proxies
-        )
+        proxies = get_random_proxy() if use_proxy and USE_PROXY else None
+        response = session.get(BASE_URL, allow_redirects=True, timeout=15, proxies=proxies)
         actual_url = response.url
         if not actual_url.endswith('/'):
             actual_url += '/'
         return actual_url
     except Exception as e:
-        print(f"⚠️ Không thể lấy URL thực tế qua proxy: {e}")
+        print(f"⚠️ Không thể lấy URL thực tế: {e}")
         if not BASE_URL.endswith('/'):
             return BASE_URL + '/'
         return BASE_URL
@@ -121,7 +90,7 @@ def get_actual_base_url():
 # HÀM TẠO HEADERS ĐỘNG
 # ============================================
 def build_dynamic_headers(no_encoding=False):
-    actual_url = get_actual_base_url()
+    actual_url = get_actual_base_url(False)
     parsed = urlparse(actual_url)
     domain = f"{parsed.scheme}://{parsed.netloc}"
     
@@ -148,7 +117,7 @@ def build_dynamic_headers(no_encoding=False):
     return headers
 
 # ============================================
-# HÀM XỬ LÝ RESPONSE
+# HÀM XỬ LÝ RESPONSE (ĐÃ TỐI ƯU GIẢI NÉN)
 # ============================================
 def parse_response(response):
     if response.status_code != 200:
@@ -156,20 +125,19 @@ def parse_response(response):
     try:
         return response.text
     except Exception as e:
-        print(f"⚠️ Không thể đọc dữ liệu dạng text ({e})")
+        print(f"⚠️ Không thể đọc dữ liệu dạng text ({e}), thử giải mã raw bytes...")
         try:
             return response.content.decode('utf-8', errors='ignore')
         except:
             return None
 
 # ============================================
-# HÀM LẤY URL STREAM (DÙNG PROXY)
+# HÀM LẤY URL THỰC TẾ CỦA DÒNG STREAM TỪ LINK CON
 # ============================================
 def extract_url_stream_from_link(link_url):
     try:
         headers = build_dynamic_headers(True)
         proxies = get_random_proxy() if USE_PROXY else None
-        
         response = session.get(link_url, headers=headers, timeout=20, proxies=proxies)
         decoded_text = parse_response(response)
         if not decoded_text:
@@ -188,13 +156,12 @@ def extract_url_stream_from_link(link_url):
         return None
 
 # ============================================
-# HÀM LẤY STREAM LINKS (DÙNG PROXY)
+# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT TRẬN ĐẤU
 # ============================================
 def extract_stream_links(url):
     try:
         headers = build_dynamic_headers(True)
         proxies = get_random_proxy() if USE_PROXY else None
-        
         response = session.get(url, headers=headers, timeout=20, proxies=proxies)
         decoded_text = parse_response(response)
         if not decoded_text:
@@ -234,7 +201,7 @@ def extract_stream_links(url):
         return []
 
 # ============================================
-# HÀM TÍNH TRẠNG THÁI LIVE
+# HÀM TÍNH TRẠNG THÁI LIVE TỪ TITLE
 # ============================================
 def get_live_status_from_title(title):
     try:
@@ -266,7 +233,7 @@ def get_live_status_from_title(title):
         return 'comming'
 
 # ============================================
-# HÀM TRÍCH XUẤT
+# HÀM TRÍCH XUẤT THỜI GIAN/NGÀY TỪ TIÊU ĐỀ
 # ============================================
 def extract_time_from_title(title):
     try:
@@ -311,18 +278,23 @@ def parse_match_from_element(item):
     if blv_count == 0:
         return None
     
+    # KHẮC PHỤC LỖI TẠO TIÊU ĐỀ: Định dạng chuẩn hóa "X vs Y lúc HH:MM ngày DD/MM/YYYY" 
+    # để Regex của hàm sinh file M3U xử lý đồng bộ, tránh bị lỗi tiêu đề cũ.
     if not title:
         href_parts = [p for p in href.split('/') if p]
         if href_parts:
             slug = href_parts[-1]
+            # Trích xuất thông tin từ slug tự động dạng: "tay-ban-nha-vs-bi-luc-0200-ngay-11-07-2026"
             time_find = re.search(r'-luc-(\d{2})(\d{2})', slug)
             date_find = re.search(r'-ngay-(\d{2})-(\d{2})-(\d{4})', slug)
             
+            # Làm sạch tên đội bóng
             clean_name = slug
             if time_find: clean_name = clean_name.split('-luc-')[0]
             elif date_find: clean_name = clean_name.split('-ngay-')[0]
             clean_name = clean_name.replace('-', ' ').title()
             
+            # Dựng lại chuỗi title chuẩn tiếng Việt có dấu đúng format cho Regex
             t_str = f"{time_find.group(1)}:{time_find.group(2)}" if time_find else "00:00"
             d_str = f"{date_find.group(1)}/{date_find.group(2)}/{date_find.group(3)}" if date_find else datetime.now().strftime("%d/%m/%Y")
             title = f"{clean_name} lúc {t_str} ngày {d_str}"
@@ -330,7 +302,7 @@ def parse_match_from_element(item):
             title = f"{item.get('data-league', 'Match')} lúc 00:00 ngày {datetime.now().strftime('%d/%m/%Y')}"
 
     live_status = get_live_status_from_title(title)
-    actual_base = get_actual_base_url().rstrip('/')
+    actual_base = get_actual_base_url(False).rstrip('/')
     
     is_hot = False
     raw_hot = item.get('data-hot', '')
@@ -356,7 +328,7 @@ def parse_match_from_element(item):
     return match
 
 # ============================================
-# HÀM PARSE ALL MATCHES
+# HÀM LẤY TOÀN BỘ TRẬN ĐẤU
 # ============================================
 def parse_all_matches(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -372,10 +344,10 @@ def parse_all_matches(html_content):
     return matches
 
 # ============================================
-# LẤY DỮ LIỆU 1 TRANG (DÙNG PROXY)
+# LẤY DỮ LIỆU CỦA 1 TRANG
 # ============================================
 def fetch_page(page):
-    actual_base = get_actual_base_url().rstrip('/')
+    actual_base = get_actual_base_url(False).rstrip('/')
     url = f"{actual_base}/sport/football/load-more/home/page/{page}/per/{PER_PAGE}?t={int(time.time())}"
     
     try:
@@ -389,7 +361,6 @@ def fetch_page(page):
             print("   🔗 Direct connection (no proxy)")
         
         response = session.get(url, headers=headers, timeout=30, proxies=proxies)
-        
         if response.status_code == 200:
             decoded_text = parse_response(response)
             if not decoded_text:
@@ -397,7 +368,6 @@ def fetch_page(page):
             try:
                 data = json.loads(decoded_text)
             except json.JSONDecodeError:
-                print(f"❌ JSON decode error: {decoded_text[:200]}")
                 return None
                 
             pagination = data.get('data', {}).get('pagination', {})
@@ -411,24 +381,23 @@ def fetch_page(page):
                     'matches': matches
                 }
             }
-        else:
-            print(f"❌ Status: {response.status_code}")
-            return None
-    except Exception as e:
-        print(f"❌ Exception: {e}")
+        return None
+    except requests.exceptions.ProxyError:
+        print("   ⚠️ Proxy error, falling back to direct connection...")
+        return fetch_page_without_proxy(page)
+    except Exception:
         return fetch_page_without_proxy(page)
 
 # ============================================
 # FALLBACK KHÔNG PROXY
 # ============================================
 def fetch_page_without_proxy(page):
-    actual_base = get_actual_base_url().rstrip('/')
+    actual_base = get_actual_base_url(False).rstrip('/')
     url = f"{actual_base}/sport/football/load-more/home/page/{page}/per/{PER_PAGE}?t={int(time.time())}"
     try:
-        print(f"📤 GET page {page} (fallback - no proxy): {url}")
+        print(f"📤 GET page {page} (fallback): {url}")
         headers = build_dynamic_headers(True)
         response = fallback_session.get(url, headers=headers, timeout=30)
-        
         if response.status_code == 200:
             decoded_text = parse_response(response)
             if not decoded_text: return None
@@ -439,9 +408,7 @@ def fetch_page_without_proxy(page):
             html_content = data.get('data', {}).get('html', '')
             matches = parse_all_matches(html_content)
             return {'success': data.get('success', False), 'data': {'pagination': pagination, 'matches': matches}}
-        return None
-    except Exception as e:
-        print(f"❌ Fallback error: {e}")
+    except Exception:
         return None
 
 # ============================================
@@ -482,7 +449,7 @@ def fetch_pages_until(page_target):
     return {'success': success, 'data': {'pagination': {'total_pages': total_pages}, 'matches': all_matches}}
 
 # ============================================
-# TẠO FILE M3U
+# TẠO FILE M3U (ĐỒNG BỘ CẤU TRÚC ĐẦU RA MỚI)
 # ============================================
 def create_m3u_file(matches, filename="xoilactv.m3u"):
     try:
@@ -521,7 +488,7 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
         if not all_streams:
             print("❌ No stream links found!")
             return False
-        
+        # Lấy thời gian Việt Nam
         vn_time = get_vietnam_time()
         time_str = vn_time.strftime('%Y-%m-%d %H:%M:%S')
         
@@ -569,6 +536,7 @@ def main():
             
             print("\n📊 Creating M3U file...")
             if create_m3u_file(matches, OUTPUT_FILE):
+                # Statistics
                 hot_count = sum(1 for m in matches if m['hot'])
                 living_count = sum(1 for m in matches if m['live'] == 'living')
                 end_count = sum(1 for m in matches if m['live'] == 'end')
