@@ -28,13 +28,13 @@ def get_base_url_from_github():
                 return base_url
             else:
                 print("⚠️ Nội dung file rỗng, sử dụng URL mặc định")
-                return "https://gnolia.com"
+                return "https://xoilacz.vip"
         else:
             print(f"⚠️ Không thể lấy file (status: {response.status_code}), sử dụng URL mặc định")
-            return "https://gnolia.com"
+            return "https://xoilacz.vip"
     except Exception as e:
         print(f"⚠️ Lỗi khi lấy BASE_URL: {e}, sử dụng URL mặc định")
-        return "https://gnolia.com"
+        return "https://xoilacz.vip"
 
 # ============================================
 # CẬP NHẬT BASE_URL
