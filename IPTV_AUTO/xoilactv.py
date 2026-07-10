@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 import time
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 import random
 import urllib3
@@ -24,7 +24,7 @@ OUTPUT_FILE = "xoilactv.m3u"
 # PROXY CONFIG
 # ============================================
 USE_PROXY = True
-
+VIETNAM_TZ = timezone(timedelta(hours=7))
 PROXY_LIST = [
     "http://113.160.132.26:8080",        # VN - Elite, ổn định nhất
     "http://202.28.194.139:31280",       # VN
@@ -43,6 +43,9 @@ fallback_session = requests.Session()
 fallback_session.verify = False
 fallback_session.headers.update({'Accept-Encoding': 'identity'})
 
+def get_vietnam_time():
+    """Lấy thời gian hiện tại theo múi giờ Việt Nam (UTC+7)"""
+    return datetime.now(VIETNAM_TZ)
 # ============================================
 # PROXY FUNCTIONS
 # ============================================
@@ -485,11 +488,14 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
         if not all_streams:
             print("❌ No stream links found!")
             return False
+        # Lấy thời gian Việt Nam
+        vn_time = get_vietnam_time()
+        time_str = vn_time.strftime('%Y-%m-%d %H:%M:%S')
         
         m3u_content = "#EXTM3U\n"
         m3u_content += "# Xôi Lạc TV Playlist\n"
         m3u_content += f"# Total streams: {len(all_streams)}\n"
-        m3u_content += f"# Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+        m3u_content += f"# Generated: {time_str} (GMT+7)\n\n"
         
         for stream in all_streams:
             m3u_content += f'#EXTINF:-1 group-title="Xôi Lạc Z TV",{stream["title"]}\n'
