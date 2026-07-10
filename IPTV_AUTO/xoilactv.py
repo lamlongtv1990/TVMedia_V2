@@ -470,7 +470,7 @@ def main():
         
         print("\n📊 Creating M3U file...")
         create_m3u_file(matches, OUTPUT_FILE)
-        purge_jsdelivr_cache()
+        #purge_jsdelivr_cache()
         
         hot_count = sum(1 for m in matches if m['hot'])
         living_count = sum(1 for m in matches if m['live'] == 'living')
@@ -489,23 +489,23 @@ def main():
     else:
         print("❌ Failed to fetch data")
 
-def purge_jsdelivr_cache():
-    print("⚡ Đang gửi yêu cầu xóa cache đến jsDelivr CDN...")
+#def purge_jsdelivr_cache():
+#    print("⚡ Đang gửi yêu cầu xóa cache đến jsDelivr CDN...")
     # Thêm tiền tố /purge/ vào trước URL của jsDelivr để xóa cache ngay lập tức
-    purge_url = "https://purge.jsdelivr.net/gh/lamlongtv1990/TVMedia_V2@main/IPTV_AUTO/xoilactv.m3u"
-    
-    try:
-        res = requests.get(purge_url, timeout=10)
-        if res.status_code == 200:
-            data = res.json()
-            if data.get('id'):
-                print("✅ Ép jsDelivr xóa bản lưu cũ thành công!")
-            else:
-                print(f"⚠️ jsDelivr phản hồi lạ: {data}")
-        else:
-            print(f"⚠️ API Purge phản hồi mã lỗi: {res.status_code}")
-    except Exception as e:
-        print(f"❌ Không thể dọn dẹp cache: {e}")
+#    purge_url = "https://purge.jsdelivr.net/gh/lamlongtv1990/TVMedia_V2@main/IPTV_AUTO/xoilactv.m3u"
+#    
+#    try:
+#        res = requests.get(purge_url, timeout=10)
+#        if res.status_code == 200:
+#            data = res.json()
+#            if data.get('id'):
+#                print("✅ Ép jsDelivr xóa bản lưu cũ thành công!")
+#            else:
+#                print(f"⚠️ jsDelivr phản hồi lạ: {data}")
+#        else:
+#            print(f"⚠️ API Purge phản hồi mã lỗi: {res.status_code}")
+#    except Exception as e:
+#        print(f"❌ Không thể dọn dẹp cache: {e}")
         
 if __name__ == "__main__":
     main()
