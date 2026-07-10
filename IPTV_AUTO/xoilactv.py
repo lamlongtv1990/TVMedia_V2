@@ -21,16 +21,20 @@ PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
 
 # ============================================
-# PROXY CONFIG
+# PROXY CONFIG - CHỈ TẬP TRUNG VÀO PROXY
 # ============================================
-USE_PROXY = False
+USE_PROXY = True
 VIETNAM_TZ = timezone(timedelta(hours=7))
 
+# DANH SÁCH PROXY HOẠT ĐỘNG (CẬP NHẬT LIÊN TỤC)
 PROXY_LIST = [
+    # Proxy VN
     "http://113.160.132.26:8080",
     "http://202.28.194.139:31280",
     "http://137.59.47.73:3128",
     "socks5://160.22.17.4:9988",
+    
+    # Proxy quốc tế
     "http://1.231.81.166:3128",
     "http://37.49.224.15:3128",
     "http://185.141.26.131:3128",
@@ -40,6 +44,7 @@ PROXY_LIST = [
 session = requests.Session()
 session.verify = False
 
+# Session fallback khi proxy lỗi
 fallback_session = requests.Session()
 fallback_session.verify = False
 fallback_session.headers.update({'Accept-Encoding': 'identity'})
@@ -48,87 +53,72 @@ def get_vietnam_time():
     return datetime.now(VIETNAM_TZ)
 
 # ============================================
-# DNS BYPASS - LẤY DOMAIN THỰC TẾ (GIỐNG CODE KIA)
+# PROXY FUNCTIONS - KIỂM TRA VÀ LỌC PROXY SỐNG
 # ============================================
-def resolve_blocked_domain(domain_url):
-    parsed_url = urlparse(domain_url)
-    hostname = parsed_url.hostname
-    
-    print(f"🔍 Đang phân giải DNS cho domain bị chặn: {hostname}...")
-    
-    # Thử Google DNS
+def check_proxy(proxy_dict):
+    """Kiểm tra proxy có hoạt động không"""
+    if not proxy_dict:
+        return False
     try:
-        dns_url = f"https://dns.google/resolve?name={hostname}&type=A"
-        res = requests.get(dns_url, timeout=10)
-        if res.status_code == 200:
-            dns_data = res.json()
-            answers = dns_data.get("Answer", [])
-            if answers:
-                ip = answers[0].get("data")
-                print(f"   ✅ IP từ Google DNS: {ip}")
-                return ip
+        test_url = "https://httpbin.org/ip"
+        response = requests.get(test_url, proxies=proxy_dict, timeout=10, verify=False)
+        if response.status_code == 200:
+            print(f"   ✅ Proxy hoạt động: {proxy_dict['http']}")
+            return True
     except Exception as e:
-        print(f"   ⚠️ Google DNS lỗi: {e}")
-    
-    # Thử Cloudflare DNS
-    try:
-        dns_url = f"https://cloudflare-dns.com/dns-query?name={hostname}&type=A"
-        res = requests.get(dns_url, headers={"accept": "application/dns-json"}, timeout=10)
-        if res.status_code == 200:
-            dns_data = res.json()
-            answers = dns_data.get("Answer", [])
-            if answers:
-                ip = answers[0].get("data")
-                print(f"   ✅ IP từ Cloudflare DNS: {ip}")
-                return ip
-    except Exception as e:
-        print(f"   ⚠️ Cloudflare DNS lỗi: {e}")
-    
-    return None
+        print(f"   ❌ Proxy chết: {proxy_dict['http']} - {str(e)[:50]}")
+    return False
 
-def get_actual_base_url():
-    """Lấy domain thực tế đang hoạt động (giống code kia)"""
-    ip = resolve_blocked_domain(BASE_URL)
-    parsed_origin = urlparse(BASE_URL)
-    
-    if ip:
-        try:
-            # Kết nối qua IP với header Host đúng
-            headers = {"Host": parsed_origin.hostname, "User-Agent": "Mozilla/5.0"}
-            target_url = f"{parsed_origin.scheme}://{ip}/"
-            print(f"🔗 Đang kết nối qua IP: {target_url}")
-            
-            response = session.get(target_url, headers=headers, allow_redirects=True, timeout=15)
-            
-            # Lấy domain thực tế sau redirect
-            actual_url = response.url
-            parsed_new = urlparse(actual_url)
-            actual_domain = f"{parsed_new.scheme}://{parsed_new.netloc}"
-            
-            print(f"   ✅ Domain thực tế: {actual_domain}")
-            return actual_domain
-        except Exception as e:
-            print(f"⚠️ Lỗi kết nối qua IP: {e}")
-    
-    # Fallback domain dự phòng
-    print("⚠️ Fallback sang domain dự phòng: https://majinbuofficial.com")
-    return "https://majinbuofficial.com"
-
-# ============================================
-# PROXY FUNCTIONS
-# ============================================
-def get_random_proxy():
+def get_working_proxy():
+    """Lấy proxy đang hoạt động"""
     if not USE_PROXY or not PROXY_LIST:
         return None
-    vn_proxies = [p for p in PROXY_LIST if '113.160.132.' in p or '202.28.194.139' in p]
-    if vn_proxies and random.random() < 0.7:
-        proxy_str = random.choice(vn_proxies)
-    else:
-        proxy_str = random.choice(PROXY_LIST)
+    
+    # Xáo trộn danh sách để tránh dùng cùng 1 proxy
+    shuffled = PROXY_LIST.copy()
+    random.shuffle(shuffled)
+    
+    for proxy_str in shuffled:
+        proxy_dict = {"http": proxy_str, "https": proxy_str}
+        if check_proxy(proxy_dict):
+            return proxy_dict
+    
+    print("⚠️ Không có proxy nào hoạt động!")
+    return None
+
+def get_random_proxy():
+    """Lấy proxy ngẫu nhiên (không kiểm tra)"""
+    if not USE_PROXY or not PROXY_LIST:
+        return None
+    
+    proxy_str = random.choice(PROXY_LIST)
     return {"http": proxy_str, "https": proxy_str}
 
 # ============================================
-# HÀM TẠO HEADERS
+# HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG (DÙNG PROXY)
+# ============================================
+def get_actual_base_url():
+    proxies = get_working_proxy() if USE_PROXY else None
+    
+    try:
+        response = session.get(
+            BASE_URL, 
+            allow_redirects=True, 
+            timeout=20, 
+            proxies=proxies
+        )
+        actual_url = response.url
+        if not actual_url.endswith('/'):
+            actual_url += '/'
+        return actual_url
+    except Exception as e:
+        print(f"⚠️ Không thể lấy URL thực tế qua proxy: {e}")
+        if not BASE_URL.endswith('/'):
+            return BASE_URL + '/'
+        return BASE_URL
+
+# ============================================
+# HÀM TẠO HEADERS ĐỘNG
 # ============================================
 def build_dynamic_headers(no_encoding=False):
     actual_url = get_actual_base_url()
@@ -158,8 +148,7 @@ def build_dynamic_headers(no_encoding=False):
     return headers
 
 # ============================================
-# CÁC HÀM XỬ LÝ RESPONSE, EXTRACT STREAM, PARSE...
-# (GIỮ NGUYÊN CODE GỐC CỦA MÀY)
+# HÀM XỬ LÝ RESPONSE
 # ============================================
 def parse_response(response):
     if response.status_code != 200:
@@ -173,10 +162,14 @@ def parse_response(response):
         except:
             return None
 
+# ============================================
+# HÀM LẤY URL STREAM (DÙNG PROXY)
+# ============================================
 def extract_url_stream_from_link(link_url):
     try:
         headers = build_dynamic_headers(True)
         proxies = get_random_proxy() if USE_PROXY else None
+        
         response = session.get(link_url, headers=headers, timeout=20, proxies=proxies)
         decoded_text = parse_response(response)
         if not decoded_text:
@@ -194,10 +187,14 @@ def extract_url_stream_from_link(link_url):
     except Exception:
         return None
 
+# ============================================
+# HÀM LẤY STREAM LINKS (DÙNG PROXY)
+# ============================================
 def extract_stream_links(url):
     try:
         headers = build_dynamic_headers(True)
         proxies = get_random_proxy() if USE_PROXY else None
+        
         response = session.get(url, headers=headers, timeout=20, proxies=proxies)
         decoded_text = parse_response(response)
         if not decoded_text:
@@ -236,6 +233,9 @@ def extract_stream_links(url):
     except Exception:
         return []
 
+# ============================================
+# HÀM TÍNH TRẠNG THÁI LIVE
+# ============================================
 def get_live_status_from_title(title):
     try:
         time_match = re.search(r'lúc\s+(\d{2}):(\d{2})', title)
@@ -265,6 +265,9 @@ def get_live_status_from_title(title):
     except Exception:
         return 'comming'
 
+# ============================================
+# HÀM TRÍCH XUẤT
+# ============================================
 def extract_time_from_title(title):
     try:
         time_match = re.search(r'lúc\s+(\d{2}):(\d{2})', title)
@@ -284,7 +287,7 @@ def extract_date_from_title(title):
         return ""
 
 # ============================================
-# HÀM PARSE MATCH (GIỮ NGUYÊN CODE GỐC)
+# HÀM PARSE 1 MATCH
 # ============================================
 def parse_match_from_element(item):
     link = item.select_one('a.redirectPopup')
@@ -352,6 +355,9 @@ def parse_match_from_element(item):
     
     return match
 
+# ============================================
+# HÀM PARSE ALL MATCHES
+# ============================================
 def parse_all_matches(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     items = soup.select('.grid-matches__item')
@@ -366,7 +372,7 @@ def parse_all_matches(html_content):
     return matches
 
 # ============================================
-# LẤY DỮ LIỆU API JSON (DÙNG DOMAIN ĐÃ BYPASS)
+# LẤY DỮ LIỆU 1 TRANG (DÙNG PROXY)
 # ============================================
 def fetch_page(page):
     actual_base = get_actual_base_url().rstrip('/')
@@ -380,9 +386,10 @@ def fetch_page(page):
         if proxies:
             print(f"   🔗 Using proxy: {proxies['http']}")
         else:
-            print("   🔗 Direct connection")
+            print("   🔗 Direct connection (no proxy)")
         
         response = session.get(url, headers=headers, timeout=30, proxies=proxies)
+        
         if response.status_code == 200:
             decoded_text = parse_response(response)
             if not decoded_text:
@@ -390,6 +397,7 @@ def fetch_page(page):
             try:
                 data = json.loads(decoded_text)
             except json.JSONDecodeError:
+                print(f"❌ JSON decode error: {decoded_text[:200]}")
                 return None
                 
             pagination = data.get('data', {}).get('pagination', {})
@@ -403,18 +411,24 @@ def fetch_page(page):
                     'matches': matches
                 }
             }
-        return None
+        else:
+            print(f"❌ Status: {response.status_code}")
+            return None
     except Exception as e:
         print(f"❌ Exception: {e}")
         return fetch_page_without_proxy(page)
 
+# ============================================
+# FALLBACK KHÔNG PROXY
+# ============================================
 def fetch_page_without_proxy(page):
     actual_base = get_actual_base_url().rstrip('/')
     url = f"{actual_base}/sport/football/load-more/home/page/{page}/per/{PER_PAGE}?t={int(time.time())}"
     try:
-        print(f"📤 GET page {page} (fallback): {url}")
+        print(f"📤 GET page {page} (fallback - no proxy): {url}")
         headers = build_dynamic_headers(True)
         response = fallback_session.get(url, headers=headers, timeout=30)
+        
         if response.status_code == 200:
             decoded_text = parse_response(response)
             if not decoded_text: return None
@@ -425,7 +439,9 @@ def fetch_page_without_proxy(page):
             html_content = data.get('data', {}).get('html', '')
             matches = parse_all_matches(html_content)
             return {'success': data.get('success', False), 'data': {'pagination': pagination, 'matches': matches}}
-    except Exception:
+        return None
+    except Exception as e:
+        print(f"❌ Fallback error: {e}")
         return None
 
 # ============================================
@@ -443,7 +459,7 @@ def fetch_pages_until(page_target):
     print(f"📌 Only matches with BLV (number-blv > 0)")
     print(f"📌 Live status calculated from match time in title")
     print(f"📌 Output file: {OUTPUT_FILE}")
-    print(f"🔧 DNS Bypass: ON (Google + Cloudflare)")
+    print(f"🔧 Proxy: {'ON' if USE_PROXY else 'OFF'}")
     print("=" * 60)
     
     for page in range(0, page_target + 1):
@@ -466,7 +482,7 @@ def fetch_pages_until(page_target):
     return {'success': success, 'data': {'pagination': {'total_pages': total_pages}, 'matches': all_matches}}
 
 # ============================================
-# TẠO FILE M3U (GIỮ NGUYÊN)
+# TẠO FILE M3U
 # ============================================
 def create_m3u_file(matches, filename="xoilactv.m3u"):
     try:
