@@ -8,7 +8,6 @@ from datetime import datetime, timedelta
 from urllib.parse import urlparse
 import random
 import urllib3
-import gzip
 import io
 
 # Tắt cảnh báo SSL
@@ -24,7 +23,7 @@ OUTPUT_FILE = "xoilactv.m3u"
 # ============================================
 # PROXY CONFIG
 # ============================================
-USE_PROXY = False
+USE_PROXY = True
 
 # Danh sách proxy hoạt động tốt
 PROXY_LIST = [
@@ -132,43 +131,35 @@ def build_dynamic_headers(no_encoding=False):
     if no_encoding:
         headers["accept-encoding"] = "identity"
     else:
+        # Nếu chưa cài thư viện brotli qua pip, hãy xóa bớt chữ ", br" đi
         headers["accept-encoding"] = "gzip, deflate, br"
     
     return headers
 
 # ============================================
-# HÀM XỬ LÝ RESPONSE
+# HÀM XỬ LÝ RESPONSE (ĐÃ FIX LỖI NÉN DỮ LIỆU)
 # ============================================
 def parse_response(response):
-    """Xử lý response, giải nén nếu cần"""
+    """Xử lý response, tận dụng requests tự giải nén dựa trên Content-Encoding"""
     if response.status_code != 200:
         return None
     
-    # Kiểm tra content-type
     content_type = response.headers.get('Content-Type', '')
     if 'application/json' not in content_type:
-        print(f"⚠️ Content-Type không phải JSON: {content_type}")
+        print(f"⚠️ Content-Type nhận được: {content_type}")
     
-    # Thử giải nén gzip
-    content_encoding = response.headers.get('Content-Encoding', '')
-    if 'gzip' in content_encoding:
-        try:
-            gzip_data = gzip.GzipFile(fileobj=io.BytesIO(response.content)).read()
-            return gzip_data.decode('utf-8')
-        except:
-            pass
-    
-    # Thử decode
     try:
-        return response.content.decode('utf-8')
-    except:
+        # Thư viện requests tự động giải nén gzip, deflate, br hoàn chỉnh thông qua thuộc tính .text
+        return response.text
+    except Exception as e:
+        print(f"⚠️ Không thể đọc dữ liệu dạng text ({e}), thử fallback về giải mã raw bytes...")
         try:
-            return response.text
+            return response.content.decode('utf-8', errors='ignore')
         except:
             return None
 
 # ============================================
-# HÀM LẤY URL STREAM TỪ 1 LINK
+# HÀM LẤY URL THỰC TẾ CỦA DÒNG STREAM TỪ LINK CON
 # ============================================
 def extract_url_stream_from_link(link_url):
     try:
@@ -182,10 +173,11 @@ def extract_url_stream_from_link(link_url):
             proxies=proxies
         )
         
-        if response.status_code != 200:
+        decoded_text = parse_response(response)
+        if not decoded_text:
             return None
         
-        soup = BeautifulSoup(response.text, 'html.parser')
+        soup = BeautifulSoup(decoded_text, 'html.parser')
         scripts = soup.select('script')
         
         for script in scripts:
@@ -199,7 +191,7 @@ def extract_url_stream_from_link(link_url):
         return None
 
 # ============================================
-# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT
+# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT Trận đấu
 # ============================================
 def extract_stream_links(url):
     try:
@@ -213,10 +205,11 @@ def extract_stream_links(url):
             proxies=proxies
         )
         
-        if response.status_code != 200:
+        decoded_text = parse_response(response)
+        if not decoded_text:
             return []
         
-        soup = BeautifulSoup(response.text, 'html.parser')
+        soup = BeautifulSoup(decoded_text, 'html.parser')
         scripts = soup.select('script')
         
         list_stream_script = None
@@ -285,7 +278,7 @@ def get_live_status_from_title(title):
         return 'comming'
 
 # ============================================
-# HÀM LẤY THỜI GIAN TỪ TITLE (HH:MM)
+# HÀM TRÍCH XUẤT THỜI GIAN/NGÀY TỪ TIÊU ĐỀ
 # ============================================
 def extract_time_from_title(title):
     try:
@@ -296,9 +289,6 @@ def extract_time_from_title(title):
     except Exception:
         return "00:00"
 
-# ============================================
-# HÀM LẤY NGÀY TỪ TITLE (DD/MM/YYYY)
-# ============================================
 def extract_date_from_title(title):
     try:
         date_match = re.search(r'ngày\s+(\d{2})/(\d{2})/(\d{4})', title)
@@ -309,7 +299,7 @@ def extract_date_from_title(title):
         return ""
 
 # ============================================
-# HÀM PARSE 1 MATCH
+# HÀM PARSE 1 TRẬN ĐẤU CỤ THỂ
 # ============================================
 def parse_match_from_element(item):
     link = item.select_one('a.redirectPopup')
@@ -370,7 +360,7 @@ def parse_all_matches(html_content):
     return matches
 
 # ============================================
-# LẤY 1 TRANG
+# LẤY DỮ LIỆU CỦA 1 TRANG (ĐÃ FIX KIỂM TRA JSON CHUẨN VÀ AN TOÀN)
 # ============================================
 def fetch_page(page):
     actual_base = get_actual_base_url(False).rstrip('/')
@@ -382,7 +372,7 @@ def fetch_page(page):
         
         proxies = get_random_proxy() if USE_PROXY else None
         if proxies:
-            print(f"   Using proxy: {proxies['http']}")
+            print(f"    Using proxy: {proxies['http']}")
         
         response = session.get(
             url, 
@@ -392,17 +382,19 @@ def fetch_page(page):
         )
         
         if response.status_code == 200:
-            # Xử lý response
             decoded_text = parse_response(response)
             if not decoded_text:
-                print("❌ Không thể decode response")
+                print("❌ Không thể giải mã dữ liệu (decoded_text rỗng)")
                 return None
             
-            if not decoded_text.strip().startswith('{'):
-                print(f"❌ Response không phải JSON: {decoded_text[:200]}")
+            try:
+                # Thực hiện parse JSON trực tiếp, tránh kiểm tra thủ công chuỗi .startswith('{') dễ dính ký tự ẩn
+                data = json.loads(decoded_text)
+            except json.JSONDecodeError as e:
+                print(f"❌ JSON Decode Error: Phản hồi không phải JSON cấu trúc chuẩn. Chi tiết: {e}")
+                print(f"Dữ liệu nhận được (200 ký tự đầu): {decoded_text[:200]}")
                 return None
-            
-            data = json.loads(decoded_text)
+                
             pagination = data.get('data', {}).get('pagination', {})
             html_content = data.get('data', {}).get('html', '')
             matches = parse_all_matches(html_content)
@@ -415,21 +407,18 @@ def fetch_page(page):
                 }
             }
         else:
-            print(f"❌ Error: {response.status_code}")
+            print(f"❌ HTTP Error Code: {response.status_code}")
             return None
             
     except requests.exceptions.ProxyError as e:
-        print(f"❌ Proxy Error: {e}")
-        return fetch_page_without_proxy(page)
-    except json.JSONDecodeError as e:
-        print(f"❌ JSON Decode Error: {e}")
+        print(f"❌ Proxy Error: {e}, chuyển hướng sang phương thức không dùng proxy...")
         return fetch_page_without_proxy(page)
     except Exception as e:
-        print(f"❌ Exception: {e}")
+        print(f"❌ Exception xảy ra: {e}")
         return fetch_page_without_proxy(page)
 
 # ============================================
-# FALLBACK - LẤY TRANG KHÔNG DÙNG PROXY
+# FALLBACK - LẤY TRANG KHÔNG DÙNG PROXY KHI PROXY CHẾT
 # ============================================
 def fetch_page_without_proxy(page):
     actual_base = get_actual_base_url(False).rstrip('/')
@@ -437,7 +426,7 @@ def fetch_page_without_proxy(page):
     
     try:
         print(f"📤 GET page {page} (no proxy): {url}")
-        headers = build_dynamic_headers(True)  # Không nén
+        headers = build_dynamic_headers(True)  # Ép kiểu dữ liệu thô (identity) không nén
         
         response = fallback_session.get(
             url, 
@@ -446,17 +435,17 @@ def fetch_page_without_proxy(page):
         )
         
         if response.status_code == 200:
-            # Xử lý response
             decoded_text = parse_response(response)
             if not decoded_text:
-                print("❌ Không thể decode response")
+                print("❌ Không thể giải mã dữ liệu ở chế độ không proxy")
                 return None
             
-            if not decoded_text.strip().startswith('{'):
-                print(f"❌ Response không phải JSON: {decoded_text[:200]}")
+            try:
+                data = json.loads(decoded_text)
+            except json.JSONDecodeError:
+                print("❌ Lỗi cấu trúc JSON trong phản hồi chế độ không proxy")
                 return None
-            
-            data = json.loads(decoded_text)
+                
             pagination = data.get('data', {}).get('pagination', {})
             html_content = data.get('data', {}).get('html', '')
             matches = parse_all_matches(html_content)
@@ -469,14 +458,14 @@ def fetch_page_without_proxy(page):
                 }
             }
         else:
-            print(f"❌ Error: {response.status_code}")
+            print(f"❌ Error không dùng proxy: {response.status_code}")
             return None
     except Exception as e:
         print(f"❌ Fallback error: {e}")
         return None
 
 # ============================================
-# LẤY NHIỀU TRANG
+# LẤY NHIỀU TRANG LIÊN TIẾP
 # ============================================
 def fetch_pages_until(page_target):
     all_matches = []
@@ -487,7 +476,7 @@ def fetch_pages_until(page_target):
         result = fetch_page(page)
         
         if not result or not result.get('success'):
-            print(f"❌ Failed to fetch page {page}")
+            print(f"❌ Thất bại khi cào trang {page}")
             success = False
             break
         
@@ -496,7 +485,7 @@ def fetch_pages_until(page_target):
         
         matches = result['data'].get('matches', [])
         all_matches.extend(matches)
-        print(f"   ✅ Page {page}: got {len(matches)} matches (total: {len(all_matches)})")
+        print(f"   ✅ Trang {page}: Tìm thấy {len(matches)} trận phù hợp (Tổng tích lũy: {len(all_matches)})")
         
         time.sleep(0.5)
     
@@ -509,7 +498,7 @@ def fetch_pages_until(page_target):
     }
 
 # ============================================
-# TẠO FILE M3U
+# TẠO FILE M3U PLAYLIST
 # ============================================
 def create_m3u_file(matches, filename="xoilactv.m3u"):
     try:
@@ -544,7 +533,7 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
                     })
         
         if not all_streams:
-            print("❌ No stream links found!")
+            print("❌ Không tìm thấy link luồng phát sóng (Stream links) hợp lệ nào!")
             return False
         
         m3u_content = "#EXTM3U\n"
@@ -561,28 +550,28 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(m3u_content)
         
-        print(f"✅ M3U file created: {filename}")
-        print(f"   Total streams: {len(all_streams)}")
+        print(f"✅ Đã xuất file M3U thành công: {filename}")
+        print(f"   Tổng số luồng đã ghi: {len(all_streams)}")
         return True
     except Exception as e:
-        print(f"❌ Error creating M3U: {e}")
+        print(f"❌ Thất bại khi tạo file M3U: {e}")
         return False
 
 # ============================================
-# MAIN
+# MAIN APPLICATION ENTRY POINT
 # ============================================
 def main():
     print("=" * 60)
-    print("        🚀 FETCH MATCHES WITH BLV ONLY")
+    print("        🚀 FETCH MATCHES WITH BLV ONLY (OPTIMIZED)")
     print("=" * 60)
     print(f"📊 Per page: {PER_PAGE} matches")
     print(f"📌 Only matches with BLV (number-blv > 0)")
     print(f"📌 Live status calculated from match time in title")
     print(f"📌 Output file: {OUTPUT_FILE}")
-    print(f"🔧 Proxy: {'ON' if USE_PROXY else 'OFF'}")
+    print(f"🔧 Proxy status: {'ON' if USE_PROXY else 'OFF'}")
     print("=" * 60)
     
-    TARGET_PAGE = 0
+    TARGET_PAGE = 0  # Bạn có thể thay đổi số lượng trang đích cần cào dữ liệu tại đây
     
     data = fetch_pages_until(TARGET_PAGE)
     
@@ -590,19 +579,19 @@ def main():
         matches = data['data']['matches']
         total_matches = len(matches)
         
-        print(f"\n📊 Success: {data['success']}")
-        print(f"📊 Total pages available: {data['data']['pagination'].get('total_pages', 0)}")
-        print(f"📊 Total matches with BLV: {total_matches}")
+        print(f"\n📊 Kết quả thành công: {data['success']}")
+        print(f"📊 Tổng số trang có trên hệ thống: {data['data']['pagination'].get('total_pages', 0)}")
+        print(f"📊 Số trận đấu có Bình Luận Viên lọc được: {total_matches}")
         
-        print("\n📋 Matches found:")
+        print("\n📋 Top 5 trận đấu tìm thấy đầu tiên:")
         for i, m in enumerate(matches[:5], 1):
             print(f"  {i}. {m['title']}")
             print(f"     FID: {m['fid']}, Hot: {m['hot']}, Live: {m['live']}")
             if any(k.startswith('link') for k in m.keys()):
                 link_count = len([k for k in m.keys() if k.startswith('link')])
-                print(f"     Streams: {link_count}")
+                print(f"     Streams tìm được: {link_count}")
         
-        print("\n📊 Creating M3U file...")
+        print("\n📊 Đang tiến hành tạo tệp tin playlist M3U...")
         create_m3u_file(matches, OUTPUT_FILE)
         
         hot_count = sum(1 for m in matches if m['hot'])
@@ -611,16 +600,16 @@ def main():
         comming_count = sum(1 for m in matches if m['live'] == 'comming')
         total_streams = sum(1 for m in matches for k in m.keys() if k.startswith('link') and m[k])
         
-        print(f"\n📊 Statistics:")
-        print(f"   🔥 Hot: {hot_count}")
-        print(f"   🔴 Living: {living_count}")
-        print(f"   ✅ Ended: {end_count}")
-        print(f"   ⏳ Coming: {comming_count}")
-        print(f"   🔗 Total streams: {total_streams}")
+        print(f"\n📊 Báo cáo Thống kê dữ liệu:")
+        print(f"   🔥 Trận Hot: {hot_count}")
+        print(f"   🔴 Đang Live: {living_count}")
+        print(f"   ✅ Đã kết thúc: {end_count}")
+        print(f"   ⏳ Sắp diễn ra: {comming_count}")
+        print(f"   🔗 Tổng số liên kết phát trực tiếp thu được: {total_streams}")
         
-        print(f"\n✅ DONE! File saved: {OUTPUT_FILE}")
+        print(f"\n✅ HOÀN THÀNH QUY TRÌNH! File lưu tại: {OUTPUT_FILE}")
     else:
-        print("❌ Failed to fetch data")
+        print("❌ Thất bại, không thu thập được dữ liệu trận đấu.")
 
 if __name__ == "__main__":
     main()
