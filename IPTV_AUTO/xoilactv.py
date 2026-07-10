@@ -47,28 +47,6 @@ fallback_session.verify = False
 fallback_session.headers.update({'Accept-Encoding': 'identity'})
 
 # ============================================
-# HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
-# ============================================
-def get_actual_base_url(use_proxy=False):
-    try:
-        proxies = get_random_proxy() if use_proxy and USE_PROXY else None
-        response = session.get(
-            BASE_URL, 
-            allow_redirects=True, 
-            timeout=15,
-            proxies=proxies
-        )
-        actual_url = response.url
-        if not actual_url.endswith('/'):
-            actual_url += '/'
-        return actual_url
-    except Exception as e:
-        print(f"⚠️ Không thể lấy URL thực tế: {e}")
-        if not BASE_URL.endswith('/'):
-            return BASE_URL + '/'
-        return BASE_URL
-
-# ============================================
 # PROXY FUNCTIONS
 # ============================================
 def get_random_proxy():
@@ -103,6 +81,28 @@ def check_proxy(proxy_dict):
         return response.status_code == 200
     except:
         return False
+
+# ============================================
+# HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
+# ============================================
+def get_actual_base_url(use_proxy=False):
+    try:
+        proxies = get_random_proxy() if use_proxy and USE_PROXY else None
+        response = session.get(
+            BASE_URL, 
+            allow_redirects=True, 
+            timeout=15,
+            proxies=proxies
+        )
+        actual_url = response.url
+        if not actual_url.endswith('/'):
+            actual_url += '/'
+        return actual_url
+    except Exception as e:
+        print(f"⚠️ Không thể lấy URL thực tế: {e}")
+        if not BASE_URL.endswith('/'):
+            return BASE_URL + '/'
+        return BASE_URL
 
 # ============================================
 # HÀM TẠO HEADERS ĐỘNG
@@ -148,7 +148,6 @@ def parse_response(response):
         print(f"⚠️ Content-Type nhận được: {content_type}")
     
     try:
-        # Tự động giải nén gzip, deflate, br thông qua .text
         return response.text
     except Exception as e:
         print(f"⚠️ Không thể đọc dữ liệu dạng text ({e}), thử giải mã raw bytes...")
@@ -277,7 +276,7 @@ def get_live_status_from_title(title):
         return 'comming'
 
 # ============================================
-# HÀM TRÍCH XUẤT THỜI GIAN/NGÀY TỪ TIÊU ĐỀ
+# HÀM LẤY THỜI GIAN TỪ TITLE (HH:MM)
 # ============================================
 def extract_time_from_title(title):
     try:
@@ -288,6 +287,9 @@ def extract_time_from_title(title):
     except Exception:
         return "00:00"
 
+# ============================================
+# HÀM LẤY NGÀY TỪ TITLE (DD/MM/YYYY)
+# ============================================
 def extract_date_from_title(title):
     try:
         date_match = re.search(r'ngày\s+(\d{2})/(\d{2})/(\d{4})', title)
@@ -298,7 +300,7 @@ def extract_date_from_title(title):
         return ""
 
 # ============================================
-# HÀM PARSE 1 TRẬN ĐẤU CỤ THỂ (UPDATED SELECTOR)
+# HÀM PARSE 1 MATCH (CẬP NHẬT SELECTOR HTML MỚI)
 # ============================================
 def parse_match_from_element(item):
     link = item.select_one('a.redirectPopup')
@@ -329,7 +331,6 @@ def parse_match_from_element(item):
         href_parts = [p for p in href.split('/') if p]
         if href_parts:
             slug = href_parts[-1]
-            # Convert slug "tay-ban-nha-vs-bi-luc-0200-ngay-11-07-2026" thành định dạng title đẹp hơn
             slug_clean = slug.replace('-', ' ')
             title = slug_clean.capitalize()
         else:
@@ -373,7 +374,7 @@ def parse_all_matches(html_content):
     # CẬP NHẬT THEO CẤU TRÚC HTML MỚI: Đổi selector thành .grid-matches__item
     items = soup.select('.grid-matches__item')
     if not items:
-        items = soup.select('.main-grid-match') # Dự phòng class phụ
+        items = soup.select('.main-grid-match')
     
     matches = []
     for item in items:
@@ -503,7 +504,7 @@ def fetch_pages_until(page_target):
         
         matches = result['data'].get('matches', [])
         all_matches.extend(matches)
-        print(f"   ✅ Trang {page}: Tìm thấy {len(matches)} trận phù hợp (Tổng tích lũy: {len(all_matches)})")
+        print(f"   ✅ Page {page}: got {len(matches)} matches (total: {len(all_matches)})")
         
         time.sleep(0.5)
     
@@ -516,7 +517,7 @@ def fetch_pages_until(page_target):
     }
 
 # ============================================
-# TẠO FILE M3U PLAYLIST
+# TẠO FILE M3U (KHÔI PHỤC 100% CẤU TRÚC GỐC)
 # ============================================
 def create_m3u_file(matches, filename="xoilactv.m3u"):
     try:
@@ -527,18 +528,41 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
             for key in link_keys:
                 stream_url = match[key]
                 if stream_url and stream_url.startswith('http'):
+                    # Lấy thời gian và ngày từ title
                     time_str = extract_time_from_title(match['title'])
                     date_str = extract_date_from_title(match['title'])
                     
-                    clean_title = re.sub(r'lúc\s+\d{2}:\d{2}\s+', '', match['title'])
+                    # Tạo tiêu đề mới: 🔥⏳03:00 Brazil vs Na Uy ngày 06/07/2026
+                    display_title = match['title']
+                    
+                    # Thay thế "lúc HH:MM" và "ngày DD/MM/YYYY" bằng format mới
+                    # Xóa phần "lúc HH:MM" và "ngày DD/MM/YYYY" khỏi title
+                    clean_title = re.sub(r'lúc\s+\d{2}:\d{2}\s+', '', display_title)
                     clean_title = re.sub(r'ngày\s+\d{2}/\d{2}/\d{4}', '', clean_title).strip()
                     
+                    # Xây dựng tiêu đề mới
                     new_title = ""
+                    
+                    # Thêm icon live
+                    #if match['live'] == 'living':
+                    #    new_title = "🔴"
+                    #elif match['live'] == 'end':
+                    #    new_title = "✅"
+                    #elif match['live'] == 'comming':
+                    #    new_title = "⏳"
+                    
+                    # Thêm hot
                     if match['hot']:
                         new_title += "🔥"
+                    
+                    # Thêm thời gian
                     if time_str:
                         new_title += time_str + " "
+                    
+                    # Thêm tên trận và ngày
                     new_title += clean_title
+                    
+                    # Nếu chưa có ngày trong title, thêm vào
                     if date_str and date_str not in new_title:
                         new_title += f" ngày {date_str}"
                     
@@ -551,7 +575,7 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
                     })
         
         if not all_streams:
-            print("❌ Không tìm thấy link luồng phát sóng (Stream links) hợp lệ nào!")
+            print("❌ No stream links found!")
             return False
         
         m3u_content = "#EXTM3U\n"
@@ -568,28 +592,27 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(m3u_content)
         
-        print(f"✅ Đã xuất file M3U thành công: {filename}")
-        print(f"   Tổng số luồng đã ghi: {len(all_streams)}")
+        print(f"✅ M3U file created: {filename}")
+        print(f"   Total streams: {len(all_streams)}")
         return True
     except Exception as e:
-        print(f"❌ Thất bại khi tạo file M3U: {e}")
+        print(f"❌ Error creating M3U: {e}")
         return False
 
 # ============================================
-# MAIN APPLICATION ENTRY POINT
+# MAIN
 # ============================================
 def main():
     print("=" * 60)
-    print("        🚀 FETCH MATCHES WITH BLV ONLY (COMPLETED 100%)")
+    print("        🚀 FETCH MATCHES WITH BLV ONLY")
     print("=" * 60)
     print(f"📊 Per page: {PER_PAGE} matches")
     print(f"📌 Only matches with BLV (number-blv > 0)")
     print(f"📌 Live status calculated from match time in title")
     print(f"📌 Output file: {OUTPUT_FILE}")
-    print(f"🔧 Proxy status: {'ON' if USE_PROXY else 'OFF'}")
     print("=" * 60)
     
-    TARGET_PAGE = 0  # Cấu hình số trang cần quét ở đây (0 có nghĩa là trang đầu tiên)
+    TARGET_PAGE = 0
     
     data = fetch_pages_until(TARGET_PAGE)
     
@@ -597,19 +620,19 @@ def main():
         matches = data['data']['matches']
         total_matches = len(matches)
         
-        print(f"\n📊 Kết quả thành công: {data['success']}")
-        print(f"📊 Tổng số trang có trên hệ thống: {data['data']['pagination'].get('total_pages', 0)}")
-        print(f"📊 Số trận đấu có Bình Luận Viên lọc được: {total_matches}")
+        print(f"\n📊 Success: {data['success']}")
+        print(f"📊 Total pages available: {data['data']['pagination'].get('total_pages', 0)}")
+        print(f"📊 Total matches with BLV: {total_matches}")
         
-        print("\n📋 Các trận đấu tìm thấy đầu tiên:")
+        print("\n📋 Matches found:")
         for i, m in enumerate(matches[:5], 1):
             print(f"  {i}. {m['title']}")
             print(f"     FID: {m['fid']}, Hot: {m['hot']}, Live: {m['live']}")
             if any(k.startswith('link') for k in m.keys()):
                 link_count = len([k for k in m.keys() if k.startswith('link')])
-                print(f"     Streams tìm được: {link_count}")
+                print(f"     Streams: {link_count}")
         
-        print("\n📊 Đang tiến hành tạo tệp tin playlist M3U...")
+        print("\n📊 Creating M3U file...")
         create_m3u_file(matches, OUTPUT_FILE)
         
         hot_count = sum(1 for m in matches if m['hot'])
@@ -618,16 +641,16 @@ def main():
         comming_count = sum(1 for m in matches if m['live'] == 'comming')
         total_streams = sum(1 for m in matches for k in m.keys() if k.startswith('link') and m[k])
         
-        print(f"\n📊 Báo cáo Thống kê dữ liệu:")
-        print(f"   🔥 Trận Hot: {hot_count}")
-        print(f"   🔴 Đang Live: {living_count}")
-        print(f"   ✅ Đã kết thúc: {end_count}")
-        print(f"   ⏳ Sắp diễn ra: {comming_count}")
-        print(f"   🔗 Tổng số liên kết phát trực tiếp thu được: {total_streams}")
+        print(f"\n📊 Statistics:")
+        print(f"   🔥 Hot: {hot_count}")
+        print(f"   🔴 Living: {living_count}")
+        print(f"   ✅ Ended: {end_count}")
+        print(f"   ⏳ Coming: {comming_count}")
+        print(f"   🔗 Total streams: {total_streams}")
         
-        print(f"\n✅ HOÀN THÀNH QUY TRÌNH! File lưu tại: {OUTPUT_FILE}")
+        print(f"\n✅ DONE! File saved: {OUTPUT_FILE}")
     else:
-        print("❌ Thất bại, không thu thập được dữ liệu trận đấu.")
+        print("❌ Failed to fetch data")
 
 if __name__ == "__main__":
     main()
