@@ -28,13 +28,13 @@ def get_base_url_from_github():
                 return base_url
             else:
                 print("⚠️ Nội dung file rỗng, sử dụng URL mặc định")
-                return "https://xoilacz.vip"
+                return "https://gnolia.com"
         else:
             print(f"⚠️ Không thể lấy file (status: {response.status_code}), sử dụng URL mặc định")
-            return "https://xoilacz.vip"
+            return "https://gnolia.com"
     except Exception as e:
         print(f"⚠️ Lỗi khi lấy BASE_URL: {e}, sử dụng URL mặc định")
-        return "https://xoilacz.vip"
+        return "https://gnolia.com"
 
 # ============================================
 # CẬP NHẬT BASE_URL
@@ -347,7 +347,7 @@ def fetch_pages_until(page_target):
 # ============================================
 # TẠO FILE M3U
 # ============================================
-def create_m3u_file(matches, filename="xoilactv.m3u"):
+def create_m3u_file(matches, filename="tv.m3u"):
     try:
         all_streams = []
         
