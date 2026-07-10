@@ -131,13 +131,12 @@ def build_dynamic_headers(no_encoding=False):
     if no_encoding:
         headers["accept-encoding"] = "identity"
     else:
-        # Nếu chưa cài thư viện brotli qua pip, hãy xóa bớt chữ ", br" đi
         headers["accept-encoding"] = "gzip, deflate, br"
     
     return headers
 
 # ============================================
-# HÀM XỬ LÝ RESPONSE (ĐÃ FIX LỖI NÉN DỮ LIỆU)
+# HÀM XỬ LÝ RESPONSE (ĐÃ TỐI ƯU GIẢI NÉN)
 # ============================================
 def parse_response(response):
     """Xử lý response, tận dụng requests tự giải nén dựa trên Content-Encoding"""
@@ -149,10 +148,10 @@ def parse_response(response):
         print(f"⚠️ Content-Type nhận được: {content_type}")
     
     try:
-        # Thư viện requests tự động giải nén gzip, deflate, br hoàn chỉnh thông qua thuộc tính .text
+        # Tự động giải nén gzip, deflate, br thông qua .text
         return response.text
     except Exception as e:
-        print(f"⚠️ Không thể đọc dữ liệu dạng text ({e}), thử fallback về giải mã raw bytes...")
+        print(f"⚠️ Không thể đọc dữ liệu dạng text ({e}), thử giải mã raw bytes...")
         try:
             return response.content.decode('utf-8', errors='ignore')
         except:
@@ -191,7 +190,7 @@ def extract_url_stream_from_link(link_url):
         return None
 
 # ============================================
-# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT Trận đấu
+# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT TRẬN ĐẤU
 # ============================================
 def extract_stream_links(url):
     try:
@@ -299,7 +298,7 @@ def extract_date_from_title(title):
         return ""
 
 # ============================================
-# HÀM PARSE 1 TRẬN ĐẤU CỤ THỂ
+# HÀM PARSE 1 TRẬN ĐẤU CỤ THỂ (UPDATED SELECTOR)
 # ============================================
 def parse_match_from_element(item):
     link = item.select_one('a.redirectPopup')
@@ -309,11 +308,12 @@ def parse_match_from_element(item):
     href = link.get('href', '')
     title = link.get('title', '')
     
-    footer_center = item.select_one('.grid-match-item__footer-center')
+    # CẬP NHẬT THEO CẤU TRÚC HTML MỚI: Tìm class .gmd-match-footer__streamer
+    footer_streamer = item.select_one('.gmd-match-footer__streamer')
     blv_count = 0
     
-    if footer_center:
-        for class_name in footer_center.get('class', []):
+    if footer_streamer:
+        for class_name in footer_streamer.get('class', []):
             if class_name.startswith('number-blv-'):
                 try:
                     blv_count = int(class_name.replace('number-blv-', ''))
@@ -324,14 +324,31 @@ def parse_match_from_element(item):
     if blv_count == 0:
         return None
     
+    # Fix thêm: Trích xuất tiêu đề trận đấu tự động nếu thuộc tính 'title' ở thẻ <a> bị rỗng
+    if not title:
+        href_parts = [p for p in href.split('/') if p]
+        if href_parts:
+            slug = href_parts[-1]
+            # Convert slug "tay-ban-nha-vs-bi-luc-0200-ngay-11-07-2026" thành định dạng title đẹp hơn
+            slug_clean = slug.replace('-', ' ')
+            title = slug_clean.capitalize()
+        else:
+            title = f"{item.get('data-league', 'Football Match')} - {item.get('data-fid', '')}"
+
     live_status = get_live_status_from_title(title)
     
     actual_base = get_actual_base_url(False)
     actual_base = actual_base.rstrip('/')
     
+    # Đồng bộ check data-hot=" on " hoặc data-hot="1"
+    is_hot = False
+    raw_hot = item.get('data-hot', '')
+    if 'on' in raw_hot or raw_hot == '1':
+        is_hot = True
+
     match = {
         'fid': item.get('data-fid', ''),
-        'hot': item.get('data-hot', '0') == '1',
+        'hot': is_hot,
         'live': live_status,
         'href': href,
         'title': title,
@@ -347,9 +364,16 @@ def parse_match_from_element(item):
     
     return match
 
+# ============================================
+# HÀM LẤY TOÀN BỘ TRẬN ĐẤU (UPDATED SELECTOR CHA)
+# ============================================
 def parse_all_matches(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
-    items = soup.select('.grid-matches__item-match')
+    
+    # CẬP NHẬT THEO CẤU TRÚC HTML MỚI: Đổi selector thành .grid-matches__item
+    items = soup.select('.grid-matches__item')
+    if not items:
+        items = soup.select('.main-grid-match') # Dự phòng class phụ
     
     matches = []
     for item in items:
@@ -360,7 +384,7 @@ def parse_all_matches(html_content):
     return matches
 
 # ============================================
-# LẤY DỮ LIỆU CỦA 1 TRANG (ĐÃ FIX KIỂM TRA JSON CHUẨN VÀ AN TOÀN)
+# LẤY DỮ LIỆU CỦA 1 TRANG (FIX XỬ LÝ JSON)
 # ============================================
 def fetch_page(page):
     actual_base = get_actual_base_url(False).rstrip('/')
@@ -384,15 +408,13 @@ def fetch_page(page):
         if response.status_code == 200:
             decoded_text = parse_response(response)
             if not decoded_text:
-                print("❌ Không thể giải mã dữ liệu (decoded_text rỗng)")
+                print("❌ Không thể giải mã dữ liệu")
                 return None
             
             try:
-                # Thực hiện parse JSON trực tiếp, tránh kiểm tra thủ công chuỗi .startswith('{') dễ dính ký tự ẩn
                 data = json.loads(decoded_text)
             except json.JSONDecodeError as e:
-                print(f"❌ JSON Decode Error: Phản hồi không phải JSON cấu trúc chuẩn. Chi tiết: {e}")
-                print(f"Dữ liệu nhận được (200 ký tự đầu): {decoded_text[:200]}")
+                print(f"❌ JSON Decode Error: {e}")
                 return None
                 
             pagination = data.get('data', {}).get('pagination', {})
@@ -411,7 +433,7 @@ def fetch_page(page):
             return None
             
     except requests.exceptions.ProxyError as e:
-        print(f"❌ Proxy Error: {e}, chuyển hướng sang phương thức không dùng proxy...")
+        print(f"❌ Proxy Error: {e}, chuyển sang fallback không dùng proxy...")
         return fetch_page_without_proxy(page)
     except Exception as e:
         print(f"❌ Exception xảy ra: {e}")
@@ -426,7 +448,7 @@ def fetch_page_without_proxy(page):
     
     try:
         print(f"📤 GET page {page} (no proxy): {url}")
-        headers = build_dynamic_headers(True)  # Ép kiểu dữ liệu thô (identity) không nén
+        headers = build_dynamic_headers(True)
         
         response = fallback_session.get(
             url, 
@@ -437,13 +459,11 @@ def fetch_page_without_proxy(page):
         if response.status_code == 200:
             decoded_text = parse_response(response)
             if not decoded_text:
-                print("❌ Không thể giải mã dữ liệu ở chế độ không proxy")
                 return None
             
             try:
                 data = json.loads(decoded_text)
             except json.JSONDecodeError:
-                print("❌ Lỗi cấu trúc JSON trong phản hồi chế độ không proxy")
                 return None
                 
             pagination = data.get('data', {}).get('pagination', {})
@@ -458,10 +478,8 @@ def fetch_page_without_proxy(page):
                 }
             }
         else:
-            print(f"❌ Error không dùng proxy: {response.status_code}")
             return None
-    except Exception as e:
-        print(f"❌ Fallback error: {e}")
+    except Exception:
         return None
 
 # ============================================
@@ -562,7 +580,7 @@ def create_m3u_file(matches, filename="xoilactv.m3u"):
 # ============================================
 def main():
     print("=" * 60)
-    print("        🚀 FETCH MATCHES WITH BLV ONLY (OPTIMIZED)")
+    print("        🚀 FETCH MATCHES WITH BLV ONLY (COMPLETED 100%)")
     print("=" * 60)
     print(f"📊 Per page: {PER_PAGE} matches")
     print(f"📌 Only matches with BLV (number-blv > 0)")
@@ -571,7 +589,7 @@ def main():
     print(f"🔧 Proxy status: {'ON' if USE_PROXY else 'OFF'}")
     print("=" * 60)
     
-    TARGET_PAGE = 0  # Bạn có thể thay đổi số lượng trang đích cần cào dữ liệu tại đây
+    TARGET_PAGE = 0  # Cấu hình số trang cần quét ở đây (0 có nghĩa là trang đầu tiên)
     
     data = fetch_pages_until(TARGET_PAGE)
     
@@ -583,7 +601,7 @@ def main():
         print(f"📊 Tổng số trang có trên hệ thống: {data['data']['pagination'].get('total_pages', 0)}")
         print(f"📊 Số trận đấu có Bình Luận Viên lọc được: {total_matches}")
         
-        print("\n📋 Top 5 trận đấu tìm thấy đầu tiên:")
+        print("\n📋 Các trận đấu tìm thấy đầu tiên:")
         for i, m in enumerate(matches[:5], 1):
             print(f"  {i}. {m['title']}")
             print(f"     FID: {m['fid']}, Hot: {m['hot']}, Live: {m['live']}")
