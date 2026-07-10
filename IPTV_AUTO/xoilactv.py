@@ -24,7 +24,7 @@ OUTPUT_FILE = "xoilactv.m3u"
 # ============================================
 # PROXY CONFIG
 # ============================================
-USE_PROXY = True
+USE_PROXY = False
 
 # Danh sách proxy hoạt động tốt
 PROXY_LIST = [
