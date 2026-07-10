@@ -470,7 +470,7 @@ def main():
         
         print("\n📊 Creating M3U file...")
         create_m3u_file(matches, OUTPUT_FILE)
-        purge_statically_cache()
+        purge_jsdelivr_cache()
         
         hot_count = sum(1 for m in matches if m['hot'])
         living_count = sum(1 for m in matches if m['live'] == 'living')
@@ -488,20 +488,24 @@ def main():
         print(f"\n✅ DONE! File saved: {OUTPUT_FILE}")
     else:
         print("❌ Failed to fetch data")
-        
-def purge_statically_cache():
-    print("⚡ Đang gửi yêu cầu xóa cache đến Statically CDN...")
-    purge_url = "https://api.statically.io/purge/lamlongtv1990/TVMedia_V2/main/IPTV_AUTO/xoilactv.m3u"
+
+def purge_jsdelivr_cache():
+    print("⚡ Đang gửi yêu cầu xóa cache đến jsDelivr CDN...")
+    # Thêm tiền tố /purge/ vào trước URL của jsDelivr để xóa cache ngay lập tức
+    purge_url = "https://purge.jsdelivr.net/gh/lamlongtv1990/TVMedia_V2@main/IPTV_AUTO/xoilactv.m3u"
     
     try:
-        # Gửi request để dọn sạch bản lưu cũ trên CDN
         res = requests.get(purge_url, timeout=10)
         if res.status_code == 200:
-            print("✅ Đã ép Statically xóa cache thành công! Dữ liệu mới đã được đồng bộ.")
+            data = res.json()
+            if data.get('id'):
+                print("✅ Ép jsDelivr xóa bản lưu cũ thành công!")
+            else:
+                print(f"⚠️ jsDelivr phản hồi lạ: {data}")
         else:
-            print(f"⚠️ Statically trả về mã phản hồi không mong muốn: {res.status_code}")
+            print(f"⚠️ API Purge phản hồi mã lỗi: {res.status_code}")
     except Exception as e:
-        print(f"❌ Không thể kết nối tới API Purge của Statically: {e}")
+        print(f"❌ Không thể dọn dẹp cache: {e}")
         
 if __name__ == "__main__":
     main()
