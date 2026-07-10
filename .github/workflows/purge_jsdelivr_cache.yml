@@ -1,0 +1,56 @@
+name: Purge jsDelivr Cache For All Changed Files
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  purge-cache:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # Lấy về 2 commit gần nhất để so sánh sự thay đổi
+
+      - name: Wait for GitHub CDN to sync
+        run: sleep 15
+
+      - name: Detect All Changed Files and Purge jsDelivr
+        run: |
+          echo "🔍 Đang quét toàn bộ các file được Add hoặc Edit (bao gồm cả thư mục con)..."
+          
+          # Lấy danh sách toàn bộ file thay đổi (chỉ lấy Added và Modified)
+          # Đã bỏ lọc 'grep -v /' để giữ lại cấu trúc đường dẫn của thư mục con
+          CHANGED_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD || true)
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "✨ Không có file nào được Add hoặc Edit trong commit này."
+            exit 0
+          fi
+          
+          echo "📋 Danh sách file cần xóa cache:"
+          echo "$CHANGED_FILES"
+          echo "----------------------------------------"
+          
+          # Duyệt qua từng file (dù ở gốc hay trong thư mục con)
+          echo "$CHANGED_FILES" | while read -r FILE; do
+            [ -z "$FILE" ] && continue
+            
+            echo "⚡ Đang gửi yêu cầu dọn cache cho file: $FILE"
+            
+            # Biến $FILE sẽ tự động chứa cả đường dẫn thư mục con (ví dụ: IPTV_AUTO/xoilactv.m3u)
+            PURGE_URL="https://purge.jsdelivr.net/gh/lamlongtv1990/TVMedia_V2@main/$FILE"
+            RESPONSE=$(curl -s -X GET "$PURGE_URL")
+            
+            echo "📥 Phản hồi: $RESPONSE"
+            
+            if [[ "$RESPONSE" == *"id"* ]] || [[ "$RESPONSE" == *"status"* ]]; then
+              echo "✅ Xóa cache file [$FILE] thành công!"
+            else
+              echo "⚠️ Gặp vấn đề khi dọn cache file [$FILE]."
+            fi
+            echo "----------------------------------------"
+          done
