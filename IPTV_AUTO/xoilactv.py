@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 # ============================================
 # CẤU HÌNH
 # ============================================
-BASE_URL_SOURCE = "https://raw.githubusercontent.com/leeshin5757/getout/main/txt/xoilactv"
+BASE_URL_SOURCE = "https://raw.githubusercontent.com/lamlongtv1990/TVMedia_V2/main/IPTV_AUTO/domain_xoilactv"
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
 
