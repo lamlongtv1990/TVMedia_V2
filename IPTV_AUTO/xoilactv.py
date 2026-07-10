@@ -10,6 +10,7 @@ import random
 import urllib3
 import io
 import socket
+import ssl
 
 # Tắt cảnh báo SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -24,7 +25,7 @@ OUTPUT_FILE = "xoilactv.m3u"
 # ============================================
 # PROXY CONFIG
 # ============================================
-USE_PROXY = False  # TẮT PROXY, DÙNG DNS BYPASS
+USE_PROXY = False
 VIETNAM_TZ = timezone(timedelta(hours=7))
 
 PROXY_LIST = [
@@ -49,67 +50,56 @@ def get_vietnam_time():
     return datetime.now(VIETNAM_TZ)
 
 # ============================================
-# DNS BYPASS - LẤY IP THỰC CỦA DOMAIN BỊ CHẶN
+# DNS BYPASS - DÙNG SOCKET VỚI DNS 1.1.1.1
 # ============================================
-def resolve_dns_bypass(domain):
-    """Lấy IP thực của domain bị chặn qua Google DNS và Cloudflare DNS"""
-    print(f"🔍 Đang phân giải DNS cho domain bị chặn: {domain}...")
-    
-    # Thử Google DNS
+def resolve_dns_manual(hostname):
+    """Resolve DNS bằng cách dùng socket.getaddrinfo với DNS 1.1.1.1"""
     try:
-        dns_url = f"https://dns.google/resolve?name={domain}&type=A"
-        res = requests.get(dns_url, timeout=10)
-        if res.status_code == 200:
-            dns_data = res.json()
-            answers = dns_data.get("Answer", [])
-            if answers:
-                ip = answers[0].get("data")
-                print(f"   ✅ IP từ Google DNS: {ip}")
-                return ip
-    except Exception as e:
-        print(f"   ⚠️ Google DNS lỗi: {e}")
+        # Dùng socket để resolve với DNS 1.1.1.1
+        import dns.resolver
+        resolver = dns.resolver.Resolver()
+        resolver.nameservers = ['1.1.1.1']
+        answers = resolver.resolve(hostname, 'A')
+        if answers:
+            return str(answers[0])
+    except:
+        pass
     
-    # Thử Cloudflare DNS
+    # Fallback: dùng socket.getaddrinfo
     try:
-        dns_url = f"https://cloudflare-dns.com/dns-query?name={domain}&type=A"
-        res = requests.get(dns_url, headers={"accept": "application/dns-json"}, timeout=10)
-        if res.status_code == 200:
-            dns_data = res.json()
-            answers = dns_data.get("Answer", [])
-            if answers:
-                ip = answers[0].get("data")
-                print(f"   ✅ IP từ Cloudflare DNS: {ip}")
-                return ip
-    except Exception as e:
-        print(f"   ⚠️ Cloudflare DNS lỗi: {e}")
+        addrinfo = socket.getaddrinfo(hostname, 443, socket.AF_INET, socket.SOCK_STREAM)
+        if addrinfo:
+            return addrinfo[0][4][0]
+    except:
+        pass
     
     return None
 
+# ============================================
+# LẤY DOMAIN THỰC TẾ
+# ============================================
 def get_actual_domain():
-    """Lấy domain thực tế đang hoạt động bằng cách connect qua IP đã resolve"""
+    """Lấy domain thực tế đang hoạt động"""
+    # DNS Bypass để lấy IP
     parsed = urlparse(BASE_URL)
     hostname = parsed.hostname
-    ip = resolve_dns_bypass(hostname)
+    ip = resolve_dns_manual(hostname)
     
     if ip:
+        print(f"   ✅ IP từ DNS 1.1.1.1: {ip}")
+        
+        # Thử kết nối với SNI
         try:
-            # Kết nối qua IP với header Host đúng
-            headers = {
-                "Host": hostname,
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-            }
-            test_url = f"{parsed.scheme}://{ip}/"
-            response = session.get(test_url, headers=headers, allow_redirects=True, timeout=15)
+            context = ssl.create_default_context()
+            with socket.create_connection((ip, 443), timeout=10) as sock:
+                with context.wrap_socket(sock, server_hostname=hostname) as ssock:
+                    pass
+            print(f"   ✅ Kết nối SSL thành công với SNI: {hostname}")
             
-            # Lấy domain thực tế sau redirect
-            actual_url = response.url
-            parsed_actual = urlparse(actual_url)
-            actual_domain = f"{parsed_actual.scheme}://{parsed_actual.netloc}"
-            
-            print(f"   ✅ Domain thực tế: {actual_domain}")
-            return actual_domain
+            # Nếu SSL thành công, dùng domain gốc
+            return BASE_URL
         except Exception as e:
-            print(f"   ⚠️ Không thể kết nối qua IP: {e}")
+            print(f"   ⚠️ SSL với {hostname} lỗi: {e}")
     
     # Fallback: dùng domain cứng
     print("   ⚠️ Fallback sang domain dự phòng: https://majinbuofficial.com")
@@ -128,26 +118,23 @@ def get_random_proxy():
         proxy_str = random.choice(PROXY_LIST)
     return {"http": proxy_str, "https": proxy_str}
 
-def check_proxy(proxy_dict):
-    if not proxy_dict:
-        return False
-    try:
-        test_url = "https://httpbin.org/ip"
-        response = requests.get(test_url, proxies=proxy_dict, timeout=10, verify=False)
-        return response.status_code == 200
-    except:
-        return False
-
 # ============================================
 # HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
 # ============================================
 def get_actual_base_url(use_proxy=False):
-    # Lấy domain thực tế đang hoạt động
+    # Lấy domain thực tế
     actual_domain = get_actual_domain()
     
     try:
         proxies = get_random_proxy() if use_proxy and USE_PROXY else None
-        response = session.get(actual_domain, allow_redirects=True, timeout=15, proxies=proxies)
+        
+        # Headers với Host đúng
+        headers = {
+            "Host": urlparse(actual_domain).hostname,
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        }
+        
+        response = session.get(actual_domain, headers=headers, allow_redirects=True, timeout=15, proxies=proxies)
         actual_url = response.url
         if not actual_url.endswith('/'):
             actual_url += '/'
@@ -204,7 +191,7 @@ def parse_response(response):
             return None
 
 # ============================================
-# HÀM LẤY URL THỰC TẾ CỦA DÒNG STREAM TỪ LINK CON
+# HÀM LẤY URL STREAM
 # ============================================
 def extract_url_stream_from_link(link_url):
     try:
@@ -228,7 +215,7 @@ def extract_url_stream_from_link(link_url):
         return None
 
 # ============================================
-# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT TRẬN ĐẤU
+# HÀM LẤY STREAM LINKS
 # ============================================
 def extract_stream_links(url):
     try:
@@ -273,7 +260,7 @@ def extract_stream_links(url):
         return []
 
 # ============================================
-# HÀM TÍNH TRẠNG THÁI LIVE TỪ TITLE
+# HÀM TÍNH TRẠNG THÁI LIVE
 # ============================================
 def get_live_status_from_title(title):
     try:
@@ -305,7 +292,7 @@ def get_live_status_from_title(title):
         return 'comming'
 
 # ============================================
-# HÀM TRÍCH XUẤT THỜI GIAN/NGÀY TỪ TIÊU ĐỀ
+# HÀM TRÍCH XUẤT
 # ============================================
 def extract_time_from_title(title):
     try:
@@ -425,7 +412,7 @@ def fetch_page(page):
         if proxies:
             print(f"   🔗 Using proxy: {proxies['http']}")
         else:
-            print("   🔗 Direct connection (no proxy)")
+            print("   🔗 Direct connection")
         
         response = session.get(url, headers=headers, timeout=30, proxies=proxies)
         if response.status_code == 200:
@@ -493,7 +480,7 @@ def fetch_pages_until(page_target):
     print(f"📌 Only matches with BLV (number-blv > 0)")
     print(f"📌 Live status calculated from match time in title")
     print(f"📌 Output file: {OUTPUT_FILE}")
-    print(f"🔧 DNS Bypass: ON (Google DNS + Cloudflare DNS)")
+    print(f"🔧 DNS Bypass: ON (DNS 1.1.1.1 + SNI)")
     print("=" * 60)
     
     for page in range(0, page_target + 1):
