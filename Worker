@@ -11,5 +11,8 @@
                },
   "Khandai": {
                 "api": "https://sv.khandai-a.xyz/api/v1/external/fixtures/unfinished"
-               }
+               },
+  "Tamquoc": {
+                "url": ""
+              }
 }
