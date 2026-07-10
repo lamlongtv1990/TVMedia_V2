@@ -6,10 +6,8 @@ import time
 import sys
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
-import random
 import urllib3
-import io
-import subprocess
+import socket
 
 # Tắt cảnh báo SSL
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -20,73 +18,71 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 BASE_URL = "https://xoilac365ll.cc"
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
-
-# ============================================
-# PROXY CONFIG
-# ============================================
-USE_PROXY = False  # TẮT PROXY, DÙNG DNS 1.1.1.1
 VIETNAM_TZ = timezone(timedelta(hours=7))
 
-PROXY_LIST = [
-    "http://113.160.132.26:8080",
-    "http://202.28.194.139:31280",
-    "http://137.59.47.73:3128",
-    "socks5://160.22.17.4:9988",
-    "http://1.231.81.166:3128",
-    "http://37.49.224.15:3128",
-    "http://185.141.26.131:3128",
-    "http://185.200.188.234:10001",
-]
-
-session = requests.Session()
-session.verify = False
-
-fallback_session = requests.Session()
-fallback_session.verify = False
-fallback_session.headers.update({'Accept-Encoding': 'identity'})
-
-def get_vietnam_time():
-    return datetime.now(VIETNAM_TZ)
-
 # ============================================
-# PROXY FUNCTIONS
+# DNS 1.1.1.1 - RESOLVE THỦ CÔNG
 # ============================================
-def get_random_proxy():
-    if not USE_PROXY or not PROXY_LIST:
-        return None
-    vn_proxies = [p for p in PROXY_LIST if '113.160.132.' in p or '202.28.194.139' in p]
-    if vn_proxies and random.random() < 0.7:
-        proxy_str = random.choice(vn_proxies)
-    else:
-        proxy_str = random.choice(PROXY_LIST)
-    return {"http": proxy_str, "https": proxy_str}
+def resolve_dns_1_1_1_1(hostname):
+    """Resolve DNS bằng 1.1.1.1"""
+    try:
+        import dns.resolver
+        resolver = dns.resolver.Resolver()
+        resolver.nameservers = ['1.1.1.1']
+        answers = resolver.resolve(hostname, 'A')
+        return [str(r) for r in answers]
+    except:
+        # Fallback: dùng socket.getaddrinfo với DNS mặc định
+        try:
+            return [socket.gethostbyname(hostname)]
+        except:
+            return None
+
+def get_ip_for_host(hostname):
+    """Lấy IP từ DNS 1.1.1.1"""
+    ips = resolve_dns_1_1_1_1(hostname)
+    if ips:
+        return ips[0]
+    return None
 
 # ============================================
 # HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
 # ============================================
-def get_actual_base_url(use_proxy=False):
+def get_actual_base_url():
     try:
-        # Dùng curl với DNS 1.1.1.1 để lấy URL thực tế
-        cmd = ['curl', '-s', '-L', '--dns-servers', '1.1.1.1', '-o', '/dev/null', '-w', '%{url_effective}', BASE_URL]
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=15)
-        if result.returncode == 0 and result.stdout:
-            actual_url = result.stdout.strip()
+        # Dùng requests với IP đã resolve
+        parsed = urlparse(BASE_URL)
+        hostname = parsed.netloc
+        ip = get_ip_for_host(hostname)
+        
+        if ip:
+            # Tạo URL với IP
+            url_with_ip = f"{parsed.scheme}://{ip}"
+            if parsed.path:
+                url_with_ip += parsed.path
+            
+            # Headers với Host đúng
+            headers = {
+                'Host': hostname,
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            }
+            
+            response = requests.get(url_with_ip, headers=headers, allow_redirects=True, timeout=15, verify=False)
+            actual_url = response.url
             if not actual_url.endswith('/'):
                 actual_url += '/'
             return actual_url
     except:
         pass
     
-    # Fallback: dùng requests
+    # Fallback: dùng requests bình thường
     try:
-        proxies = get_random_proxy() if use_proxy and USE_PROXY else None
-        response = session.get(BASE_URL, allow_redirects=True, timeout=15, proxies=proxies)
+        response = requests.get(BASE_URL, allow_redirects=True, timeout=15, verify=False)
         actual_url = response.url
         if not actual_url.endswith('/'):
             actual_url += '/'
         return actual_url
-    except Exception as e:
-        print(f"⚠️ Không thể lấy URL thực tế: {e}")
+    except:
         if not BASE_URL.endswith('/'):
             return BASE_URL + '/'
         return BASE_URL
@@ -95,7 +91,7 @@ def get_actual_base_url(use_proxy=False):
 # HÀM TẠO HEADERS ĐỘNG
 # ============================================
 def build_dynamic_headers(no_encoding=False):
-    actual_url = get_actual_base_url(False)
+    actual_url = get_actual_base_url()
     parsed = urlparse(actual_url)
     domain = f"{parsed.scheme}://{parsed.netloc}"
     
@@ -122,6 +118,30 @@ def build_dynamic_headers(no_encoding=False):
     return headers
 
 # ============================================
+# HÀM LẤY DỮ LIỆU - DÙNG IP RESOLVE
+# ============================================
+def fetch_with_dns(url, headers):
+    """Fetch dùng DNS 1.1.1.1"""
+    parsed = urlparse(url)
+    hostname = parsed.netloc
+    ip = get_ip_for_host(hostname)
+    
+    if ip:
+        # Tạo URL với IP
+        url_with_ip = f"{parsed.scheme}://{ip}{parsed.path}"
+        if parsed.query:
+            url_with_ip += f"?{parsed.query}"
+        
+        # Headers với Host đúng
+        headers['Host'] = hostname
+        
+        response = requests.get(url_with_ip, headers=headers, timeout=30, verify=False)
+        return response
+    
+    # Fallback: dùng URL gốc
+    return requests.get(url, headers=headers, timeout=30, verify=False)
+
+# ============================================
 # HÀM XỬ LÝ RESPONSE
 # ============================================
 def parse_response(response):
@@ -136,33 +156,13 @@ def parse_response(response):
             return None
 
 # ============================================
-# HÀM LẤY URL THỰC TẾ CỦA DÒNG STREAM TỪ LINK CON
+# HÀM LẤY URL STREAM TỪ LINK CON
 # ============================================
 def extract_url_stream_from_link(link_url):
     try:
         headers = build_dynamic_headers(True)
-        proxies = get_random_proxy() if USE_PROXY else None
-        
-        # Dùng curl với DNS 1.1.1.1
-        header_args = []
-        for key, value in headers.items():
-            header_args.extend(['-H', f'{key}: {value}'])
-        
-        cmd = [
-            'curl', '-s', '-L',
-            '--dns-servers', '1.1.1.1',
-            '--connect-timeout', '20',
-            '--max-time', '20',
-        ] + header_args + [link_url]
-        
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
-        if result.returncode == 0 and result.stdout:
-            decoded_text = result.stdout
-        else:
-            # Fallback requests
-            response = session.get(link_url, headers=headers, timeout=20, proxies=proxies)
-            decoded_text = parse_response(response)
-        
+        response = fetch_with_dns(link_url, headers)
+        decoded_text = parse_response(response)
         if not decoded_text:
             return None
         
@@ -179,32 +179,13 @@ def extract_url_stream_from_link(link_url):
         return None
 
 # ============================================
-# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT TRẬN ĐẤU
+# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT
 # ============================================
 def extract_stream_links(url):
     try:
         headers = build_dynamic_headers(True)
-        proxies = get_random_proxy() if USE_PROXY else None
-        
-        # Dùng curl với DNS 1.1.1.1
-        header_args = []
-        for key, value in headers.items():
-            header_args.extend(['-H', f'{key}: {value}'])
-        
-        cmd = [
-            'curl', '-s', '-L',
-            '--dns-servers', '1.1.1.1',
-            '--connect-timeout', '20',
-            '--max-time', '20',
-        ] + header_args + [url]
-        
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
-        if result.returncode == 0 and result.stdout:
-            decoded_text = result.stdout
-        else:
-            response = session.get(url, headers=headers, timeout=20, proxies=proxies)
-            decoded_text = parse_response(response)
-        
+        response = fetch_with_dns(url, headers)
+        decoded_text = parse_response(response)
         if not decoded_text:
             return []
         
@@ -242,7 +223,7 @@ def extract_stream_links(url):
         return []
 
 # ============================================
-# HÀM TÍNH TRẠNG THÁI LIVE TỪ TITLE
+# HÀM TÍNH TRẠNG THÁI LIVE
 # ============================================
 def get_live_status_from_title(title):
     try:
@@ -274,7 +255,7 @@ def get_live_status_from_title(title):
         return 'comming'
 
 # ============================================
-# HÀM TRÍCH XUẤT THỜI GIAN/NGÀY TỪ TIÊU ĐỀ
+# HÀM TRÍCH XUẤT
 # ============================================
 def extract_time_from_title(title):
     try:
@@ -294,6 +275,9 @@ def extract_date_from_title(title):
     except Exception:
         return ""
 
+def get_vietnam_time():
+    return datetime.now(VIETNAM_TZ)
+
 # ============================================
 # HÀM PARSE 1 MATCH
 # ============================================
@@ -305,16 +289,12 @@ def parse_match_from_element(item):
     href = link.get('href', '')
     title = link.get('title', '').strip()
     
-    footer_streamer = item.select_one('.gmd-match-footer__streamer')
+    footer_streamer = item.select_one('.grid-match__footer-center')
     blv_count = 0
     if footer_streamer:
-        for class_name in footer_streamer.get('class', []):
-            if class_name.startswith('number-blv-'):
-                try:
-                    blv_count = int(class_name.replace('number-blv-', ''))
-                except:
-                    blv_count = 0
-                break
+        # Đếm số lượng commentator
+        commentators = footer_streamer.select('a.commentator')
+        blv_count = len(commentators)
     
     if blv_count == 0:
         return None
@@ -338,13 +318,10 @@ def parse_match_from_element(item):
             title = f"{item.get('data-league', 'Match')} lúc 00:00 ngày {datetime.now().strftime('%d/%m/%Y')}"
 
     live_status = get_live_status_from_title(title)
-    actual_base = get_actual_base_url(False).rstrip('/')
+    actual_base = get_actual_base_url().rstrip('/')
     
-    is_hot = False
-    raw_hot = item.get('data-hot', '')
-    if 'on' in raw_hot or raw_hot == '1':
-        is_hot = True
-
+    is_hot = 'grid-match--is-hot' in item.get('class', []) or item.get('data-hot', '') == ' on '
+    
     match = {
         'fid': item.get('data-fid', ''),
         'hot': is_hot,
@@ -364,13 +341,11 @@ def parse_match_from_element(item):
     return match
 
 # ============================================
-# HÀM LẤY TOÀN BỘ TRẬN ĐẤU
+# HÀM PARSE ALL MATCHES
 # ============================================
 def parse_all_matches(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
-    items = soup.select('.grid-matches__item')
-    if not items:
-        items = soup.select('.main-grid-match')
+    items = soup.select('.main-grid-match')
     
     matches = []
     for item in items:
@@ -380,49 +355,45 @@ def parse_all_matches(html_content):
     return matches
 
 # ============================================
-# LẤY DỮ LIỆU CỦA 1 TRANG - DÙNG CURL VỚI DNS 1.1.1.1
+# LẤY DỮ LIỆU 1 TRANG
 # ============================================
 def fetch_page(page):
-    actual_base = get_actual_base_url(False).rstrip('/')
+    actual_base = get_actual_base_url().rstrip('/')
     url = f"{actual_base}/sport/football/load-more/home/page/{page}/per/{PER_PAGE}?t={int(time.time())}"
     
     try:
         print(f"📤 GET page {page}: {url}")
-        headers = build_dynamic_headers(True)  # Không nén
+        headers = build_dynamic_headers(True)
         
-        # Build headers cho curl
-        header_args = []
-        for key, value in headers.items():
-            header_args.extend(['-H', f'{key}: {value}'])
+        response = fetch_with_dns(url, headers)
         
-        # Dùng curl với DNS 1.1.1.1
-        cmd = [
-            'curl', '-s', '-L',
-            '--dns-servers', '1.1.1.1',
-            '--connect-timeout', '30',
-            '--max-time', '30',
-        ] + header_args + [url]
-        
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-        
-        if result.returncode == 0 and result.stdout:
-            decoded_text = result.stdout
-            if decoded_text.strip().startswith('{'):
-                data = json.loads(decoded_text)
-                pagination = data.get('data', {}).get('pagination', {})
-                html_content = data.get('data', {}).get('html', '')
-                matches = parse_all_matches(html_content)
-                
-                return {
-                    'success': data.get('success', False),
-                    'data': {
-                        'pagination': pagination,
-                        'matches': matches
-                    }
+        if response.status_code == 200:
+            decoded_text = parse_response(response)
+            if not decoded_text:
+                print("❌ Không thể decode response")
+                return None
+            
+            if not decoded_text.strip().startswith('{'):
+                print(f"❌ Response không phải JSON: {decoded_text[:200]}")
+                return None
+            
+            data = json.loads(decoded_text)
+            pagination = data.get('data', {}).get('pagination', {})
+            html_content = data.get('data', {}).get('html', '')
+            matches = parse_all_matches(html_content)
+            
+            return {
+                'success': data.get('success', False),
+                'data': {
+                    'pagination': pagination,
+                    'matches': matches
                 }
-        return None
+            }
+        else:
+            print(f"❌ Status: {response.status_code}")
+            return None
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"❌ Exception: {e}")
         return None
 
 # ============================================
