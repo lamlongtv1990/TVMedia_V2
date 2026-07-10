@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 import time
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 
 # ============================================
@@ -13,7 +13,10 @@ from urllib.parse import urlparse
 BASE_URL_SOURCE = "https://raw.githubusercontent.com/lamlongtv1990/TVMedia_V2/main/IPTV_AUTO/domain_xoilactv"
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
-
+VIETNAM_TZ = timezone(timedelta(hours=7))
+def get_vietnam_time():
+    """Lấy thời gian hiện tại theo múi giờ Việt Nam (UTC+7)"""
+    return datetime.now(VIETNAM_TZ)
 # ============================================
 # HÀM LẤY BASE_URL TỪ GITHUB
 # ============================================
@@ -405,11 +408,14 @@ def create_m3u_file(matches, filename="tv.m3u"):
         if not all_streams:
             print("❌ No stream links found!")
             return False
+        # Lấy thời gian Việt Nam
+        vn_time = get_vietnam_time()
+        time_str = vn_time.strftime('%Y-%m-%d %H:%M:%S')
         
         m3u_content = "#EXTM3U\n"
         m3u_content += "# Xôi Lạc TV Playlist\n"
         m3u_content += f"# Total streams: {len(all_streams)}\n"
-        m3u_content += f"# Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+        m3u_content += f"# Generated: {time_str} (GMT+7)\n\n"
         
         for stream in all_streams:
             m3u_content += f'#EXTINF:-1 group-title="Xôi Lạc Z TV",{stream["title"]}\n'
