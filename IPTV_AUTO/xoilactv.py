@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 # ============================================
 # CẤU HÌNH
 # ============================================
-BASE_URL = "https://gnolia.com"
+BASE_URL = "https://xoilacz.vip"
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
 
