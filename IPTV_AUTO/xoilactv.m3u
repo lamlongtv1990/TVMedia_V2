@@ -1,27 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 10
-# Generated: 2026-07-11 09:31:13 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel8.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783737061-0-0-1266e4f567ca480426f3f9f309542fb5
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Sport Boys vs Comerciantes FC ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel23.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Sport Boys vs Comerciantes FC ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783737064-0-0-e33346ee2e43075d21607c3531affa36
+# Total streams: 12
+# Generated: 2026-07-11 10:31:12 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Nữ Utah Royals vs Nữ Gotham FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Nữ Utah Royals vs Nữ Gotham FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783737067-0-0-074fb56eaaf43bb4c09c49c6653d9df8
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783740663-0-0-0d08a9b92ed69f223f0866d149a84740
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",10:00 Birkenhead United vs Auckland United ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel7.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",10:00 Birkenhead United vs Auckland United ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783737069-0-0-dd74edf60a378f64fae1dc7c3fdbe2e0
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783740664-0-0-353dbbc11689618688c71b91b65beefb
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",11:00 South Hobart vs Ulverstone ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,5 +31,35 @@ https://live2.pro2cdnlive.com/live/channel27.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",11:00 South Hobart vs Ulverstone ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783737072-0-0-9ebbf699e875e7fe00c3d7ca6f86bc79
+https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783740665-0-0-392c7e41df04c171162e910cad4cd025
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",11:30 Hobart Zebras vs Launceston City ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel23.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",11:30 Hobart Zebras vs Launceston City ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783740667-0-0-d20c91ea5c8e9b6b9e6088d9d01861be
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Melbourne City NPL vs Heidelberg United ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel8.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Melbourne City NPL vs Heidelberg United ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783740669-0-0-737b1b9ffcd179ad1bd691176fab26bc
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Canberra FC vs Brindabella Blues FC ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel21.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Canberra FC vs Brindabella Blues FC ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783740671-0-0-5029195c6611a16828a448e4a0d14ae1
 
