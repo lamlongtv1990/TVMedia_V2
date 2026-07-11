@@ -1,33 +1,44 @@
 name: Purge jsDelivr Cache For All Changed Files
 
 on:
+  # HÀNH ĐỘNG 1: Kích hoạt khi BẠN tự push tay code lên nhánh main
   push:
     branches:
       - main
+
+  # HÀNH ĐỘNG 2: Kích hoạt NGAY SAU KHI workflow Cronjob (xoilactv) chạy xong thành công
+  workflow_run:
+    workflows: ["Manual Run"]  # 👈 Điền chính xác cái 'name:' ở dòng đầu tiên trong file xoilactv.yml của bạn
+    types:
+      - completed
+
+  # Cho phép bấm nút chạy bằng tay nếu muốn
   workflow_dispatch:
 
 jobs:
   purge-cache:
     runs-on: ubuntu-latest
+    # Điều kiện an toàn: Nếu kích hoạt bởi workflow_run thì phải đảm bảo workflow đó chạy THÀNH CÔNG (success)
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2 # Lấy về 2 commit gần nhất để so sánh sự thay đổi
+          fetch-depth: 2 # Lấy 2 commit gần nhất để so sánh sự thay đổi
 
       - name: Wait for GitHub CDN to sync
-        run: sleep 15
+        run: sleep 20
 
       - name: Detect All Changed Files and Purge jsDelivr
         run: |
-          echo "🔍 Đang quét toàn bộ các file được Add hoặc Edit (bao gồm cả thư mục con)..."
+          echo "🔍 Đang quét toàn bộ các file được Add hoặc Edit..."
           
-          # Lấy danh sách toàn bộ file thay đổi (chỉ lấy Added và Modified)
-          # Đã bỏ lọc 'grep -v /' để giữ lại cấu trúc đường dẫn của thư mục con
+          # Lấy danh sách file thay đổi (Added và Modified) giữa commit hiện tại và liền trước
           CHANGED_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD || true)
           
           if [ -z "$CHANGED_FILES" ]; then
-            echo "✨ Không có file nào được Add hoặc Edit trong commit này."
+            echo "✨ Không có file nào thay đổi trong commit này."
             exit 0
           fi
           
@@ -35,22 +46,13 @@ jobs:
           echo "$CHANGED_FILES"
           echo "----------------------------------------"
           
-          # Duyệt qua từng file (dù ở gốc hay trong thư mục con)
-          echo "$CHANGED_FILES" | while read -r FILE; do
+          while read -r FILE; do
             [ -z "$FILE" ] && continue
             
             echo "⚡ Đang gửi yêu cầu dọn cache cho file: $FILE"
-            
-            # Biến $FILE sẽ tự động chứa cả đường dẫn thư mục con (ví dụ: IPTV_AUTO/xoilactv.m3u)
             PURGE_URL="https://purge.jsdelivr.net/gh/lamlongtv1990/TVMedia_V2@main/$FILE"
             RESPONSE=$(curl -s -X GET "$PURGE_URL")
             
-            echo "📥 Phản hồi: $RESPONSE"
-            
-            if [[ "$RESPONSE" == *"id"* ]] || [[ "$RESPONSE" == *"status"* ]]; then
-              echo "✅ Xóa cache file [$FILE] thành công!"
-            else
-              echo "⚠️ Gặp vấn đề khi dọn cache file [$FILE]."
-            fi
+            echo "📥 Phản hồi từ jsDelivr: $RESPONSE"
             echo "----------------------------------------"
-          done
+          done <<< "$CHANGED_FILES"
