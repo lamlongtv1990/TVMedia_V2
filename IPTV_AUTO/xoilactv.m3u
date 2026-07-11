@@ -1,27 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
 # Total streams: 10
-# Generated: 2026-07-11 08:30:59 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel27.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783733454-0-0-784c17cfffdf6616b46cf247a4ec4e10
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",07:15 Tecnico Uni. vs Macara ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel20.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",07:15 Tecnico Uni. vs Macara ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783733455-0-0-ee341c84ed0cb591068be009e131dc54
+# Generated: 2026-07-11 09:31:13 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel8.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783733456-0-0-63d1f8ebd97d45df22442c7390e89d51
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783737061-0-0-1266e4f567ca480426f3f9f309542fb5
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Sport Boys vs Comerciantes FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel23.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Sport Boys vs Comerciantes FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783733457-0-0-8a31a81cd9d2051c64df9b7e7e6af25b
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783737064-0-0-e33346ee2e43075d21607c3531affa36
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Nữ Utah Royals vs Nữ Gotham FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,5 +31,25 @@ https://live2.pro2cdnlive.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Nữ Utah Royals vs Nữ Gotham FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783733458-0-0-e8006b433f7024dbb6eeb0e38930ae9d
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783737067-0-0-074fb56eaaf43bb4c09c49c6653d9df8
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",10:00 Birkenhead United vs Auckland United ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel7.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",10:00 Birkenhead United vs Auckland United ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783737069-0-0-dd74edf60a378f64fae1dc7c3fdbe2e0
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",11:00 South Hobart vs Ulverstone ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel27.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",11:00 South Hobart vs Ulverstone ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783737072-0-0-9ebbf699e875e7fe00c3d7ca6f86bc79
 
