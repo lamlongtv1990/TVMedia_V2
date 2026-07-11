@@ -1,7 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
 # Total streams: 10
-# Generated: 2026-07-11 07:31:07 (GMT+7)
+# Generated: 2026-07-11 08:30:59 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -11,17 +11,7 @@ https://live2.pro2cdnlive.com/live/channel27.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 FC Cincinnati vs Burnley ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783729862-0-0-c2bbe77b15a7fd9d7e1297aaf53a6809
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel8.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783729863-0-0-d630e26dea71566773cdc3be71c86822
+https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783733454-0-0-784c17cfffdf6616b46cf247a4ec4e10
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:15 Tecnico Uni. vs Macara ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +21,17 @@ https://live2.pro2cdnlive.com/live/channel20.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:15 Tecnico Uni. vs Macara ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783729864-0-0-a87d27c6a0098572e737493fb134b9b8
+https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783733455-0-0-ee341c84ed0cb591068be009e131dc54
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel8.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Nữ Orlando Pride vs Nữ Kansas City ngày 11/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783733456-0-0-63d1f8ebd97d45df22442c7390e89d51
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Sport Boys vs Comerciantes FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +41,7 @@ https://live2.pro2cdnlive.com/live/channel23.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:00 Sport Boys vs Comerciantes FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783729865-0-0-783bacd4e6be6f50eaca07cfbf0513c9
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783733457-0-0-8a31a81cd9d2051c64df9b7e7e6af25b
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Nữ Utah Royals vs Nữ Gotham FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,5 +51,5 @@ https://live2.pro2cdnlive.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 Nữ Utah Royals vs Nữ Gotham FC ngày 11/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783729867-0-0-760dc64ced0395dcaeaaf81821d55718
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783733458-0-0-e8006b433f7024dbb6eeb0e38930ae9d
 
