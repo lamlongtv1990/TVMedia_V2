@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 10
-# Generated: 2026-07-12 11:31:16 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",10:00 AV Alta vs Phoenix Rising FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel27.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",10:00 AV Alta vs Phoenix Rising FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783830664-0-0-ef18adcf08bfeba1578fd89a8ceb5a59
+# Total streams: 12
+# Generated: 2026-07-12 12:31:08 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",11:30 Sydney United 58 FC vs Rockdale City Suns ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel23.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",11:30 Sydney United 58 FC vs Rockdale City Suns ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783830667-0-0-a03e9d0980514f51c579003050e9f7aa
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783834259-0-0-443e52f13b8cb9d569c328c7253e6a87
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Marconi Stallions vs Western Sydney AM ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,17 +21,7 @@ https://live2.pro2cdnlive.com/live/channel20.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Marconi Stallions vs Western Sydney AM ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783830670-0-0-2a077fecc5c129841478794da4613afe
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Gold Coast United vs Brisbane Olympic FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel9.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Gold Coast United vs Brisbane Olympic FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783830673-0-0-6030b1455032646ccfa63534831faccf
+https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783834261-0-0-b2d7f7119c8f53a119d6f6d268e67997
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 St Albans Saints vs Caroline Springs ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,5 +31,35 @@ https://live2.pro2cdnlive.com/live/channel14.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 St Albans Saints vs Caroline Springs ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783830675-0-0-3429591d28005833218af510278683a9
+https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783834263-0-0-24b1aeed9f388dcf630f186469c7031a
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Gold Coast United vs Brisbane Olympic FC ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel9.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",12:00 Gold Coast United vs Brisbane Olympic FC ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783834265-0-0-60c54dfec624f58121abb3ea5225f489
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",13:30 Gold Coast Knights vs Brisbane City ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel8.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",13:30 Gold Coast Knights vs Brisbane City ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783834266-0-0-050c44b32801f4aac776376f76cbd4c9
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",14:00 Queensland Lions SC vs Eastern Suburbs ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel7.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",14:00 Queensland Lions SC vs Eastern Suburbs ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783834268-0-0-9e877d4aa68d9a15ab50ce7dd648eeb4
 
