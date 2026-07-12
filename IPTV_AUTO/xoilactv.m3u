@@ -1,47 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 14
-# Generated: 2026-07-12 19:31:08 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Seoul FC vs Gangwon FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel5.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Seoul FC vs Gangwon FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel5.flv?auth_key=3000001783859459-0-0-99ab8f9472fd98c90c00aa46b06ec75c
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Incheon United vs FC Anyang ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel11.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Incheon United vs FC Anyang ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783859461-0-0-e0b4bd7a294cb38268d741bfa1b29a79
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Busan I Park vs Gimpo FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel8.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Busan I Park vs Gimpo FC ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783859462-0-0-7d5c37495697e50209b25fa451b398fc
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Shenzhen Juniors vs Heilongjiang Ice ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel10.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Shenzhen Juniors vs Heilongjiang Ice ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783859463-0-0-70fb188c5d2e2795ae46b36e25a8cf37
+# Total streams: 12
+# Generated: 2026-07-12 20:31:22 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Malmo FF vs IFK Goteborg ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel18.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Malmo FF vs IFK Goteborg ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001783859464-0-0-f0d0c6c7a784faf6c2d6a09342a6df9e
+https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001783863064-0-0-3265a47eb03113a76aaad237e2cc8745
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Hammarby vs Kalmar ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel12.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Hammarby vs Kalmar ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783859466-0-0-1763c4a7f1eb928b37f01c678fdf80ee
+https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783863065-0-0-957361fd10ffc83b483fbdf7cfabba69
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Vasteras SK FK vs Degerfors IF ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -71,5 +31,35 @@ https://live2.pro2cdnlive.com/live/channel13.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Vasteras SK FK vs Degerfors IF ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783859467-0-0-ba8508dc88ac21a9d1827e64c69acb95
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783863067-0-0-3936e6829adcfb03321fd381c2dd10f9
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:30 KFUM Oslo vs Bodo Glimt ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel19.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:30 KFUM Oslo vs Bodo Glimt ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel19.flv?auth_key=3000001783863078-0-0-a3aa383e4622835ad65ba7243beedd1d
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",20:00 Ulytau Zhezkazgan vs Kaisar Kyzylorda ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel23.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",20:00 Ulytau Zhezkazgan vs Kaisar Kyzylorda ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783863080-0-0-4f1bb599dc1c89a01a01682037ff2de0
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",20:00 Arsenal Dzyarz vs FK Vitebsk ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel22.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",20:00 Arsenal Dzyarz vs FK Vitebsk ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783863082-0-0-f0093b237d2aefd5187aeb5c166b9187
 
