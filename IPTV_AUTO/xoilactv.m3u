@@ -1,37 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 12
-# Generated: 2026-07-13 04:31:17 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:00 Chicago Flame B vs NY Red Bulls B ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel20.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:00 Chicago Flame B vs NY Red Bulls B ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783891867-0-0-a74408569d1af0761d9f4780af0f3491
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:05 Hafnarfjordur vs Valur Reykjavik ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel28.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:05 Hafnarfjordur vs Valur Reykjavik ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783891869-0-0-39efb59d7cccf23faf64ad057f616228
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:30 UTC Cajamarca vs Club Ada Jaen ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel17.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:30 UTC Cajamarca vs Club Ada Jaen ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783891871-0-0-388074ff21ad60c4f953a0e8ef1b94ce
+# Total streams: 14
+# Generated: 2026-07-13 05:31:26 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Carolina Core vs Chattanooga ngày 13/07/2020
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel10.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Carolina Core vs Chattanooga ngày 13/07/2020
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783891873-0-0-f89f38e87565369a41783a196007aa24
+https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783895472-0-0-55a53f51fbbb4ca15af0094f90d3c337
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Atl. Goianiense vs Fortaleza ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Atl. Goianiense vs Fortaleza ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783891875-0-0-aeb1fda50c9bde54b5b2c6fa05e08f27
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783895474-0-0-5c1f836cfb3f9fb020ab44e8fea14964
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",04:30 RC Montevideo vs CA Penarol ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,5 +31,45 @@ https://live2.pro2cdnlive.com/live/channel9.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",04:30 RC Montevideo vs CA Penarol ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783891877-0-0-7b42c554c65d25a26070c6350dd7a51f
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783895477-0-0-5e6b17cb21716036f8cc4b41859e9268
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",04:30 D. Concepcion vs Puerto Montt ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel23.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",04:30 D. Concepcion vs Puerto Montt ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783895479-0-0-a93f945ddfd2952ed2882fd2adc4a066
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Connecticut United FC vs Toronto FC II ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel13.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Connecticut United FC vs Toronto FC II ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783895481-0-0-13c35849cee80d90489fb5a7df8d201f
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cincinnati II vs Orlando City B ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel8.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cincinnati II vs Orlando City B ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783895483-0-0-6a0c464c15d3bf9b904dc28db2418d41
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 CRB AL vs Goiás EC ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel4.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 CRB AL vs Goiás EC ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783895486-0-0-3054695f32f4e78e83b53fbea9579c8c
 
