@@ -1,57 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 16
-# Generated: 2026-07-13 00:31:16 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:45 Transinvest vs Banga Gargzdai ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel22.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:45 Transinvest vs Banga Gargzdai ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783877463-0-0-0ffd0e41fcf67fb8bbc73364081e27e4
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 Spartak Kostroma vs FC KAMAZ ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel19.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 Spartak Kostroma vs FC KAMAZ ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel19.flv?auth_key=3000001783877465-0-0-188dea299ecda52c92bf0cfc7caabf11
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 Rigas FS vs Jelgava ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel27.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 Rigas FS vs Jelgava ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783877467-0-0-699237e02ce8f46ff5aede3382c4d05c
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Zenit St. Petersburg vs Crvena Zvezda ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel23.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Zenit St. Petersburg vs Crvena Zvezda ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783877469-0-0-caa4f450ca459de6b2d725bb0975d911
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Cobreloa vs Deportes La Serena ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel20.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Cobreloa vs Deportes La Serena ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783877470-0-0-93503ba20ba4b4a37ffcc8a6babc3ae8
+# Total streams: 14
+# Generated: 2026-07-13 01:31:18 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 LDU Quito vs Libertad FC ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel17.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 LDU Quito vs Libertad FC ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783877472-0-0-67dd164fa5306ebc9c5330deea427c7f
+https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783881068-0-0-999380bad28c9bf897cad64c1117bf63
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:15 Sarpsborg 08 vs Viking ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -71,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel12.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:15 Sarpsborg 08 vs Viking ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783877474-0-0-4d6ead23a1a9f35fb08aba14707424a8
+https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783881069-0-0-b4fb4049ce25b18b6a5e55e976102167
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 Univ. Craiova vs Universitatea Cluj ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -81,5 +31,45 @@ https://live2.pro2cdnlive.com/live/channel18.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:30 Univ. Craiova vs Universitatea Cluj ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001783877476-0-0-5959ac258ab7a6626b1f928b103f14fc
+https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001783881071-0-0-a4e67a01de435e8ebf5b5765542f5e55
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Boston River vs Central Espanol ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel10.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Boston River vs Central Espanol ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783881073-0-0-8c59fa4ded4fb74cc3e79dd19c67edc9
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Fram Reykjavik vs Thor Akureyri ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel21.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Fram Reykjavik vs Thor Akureyri ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783881074-0-0-35fb432d2de5bc3d64fe8675e519a8bc
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 KR Reykjavik vs IBV Vestmannaeyjar ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel9.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 KR Reykjavik vs IBV Vestmannaeyjar ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783881076-0-0-4e45bd9e20521be16bb8cd4b619896ab
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",02:00 Coquimbo Unido vs Union La Calera ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel13.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",02:00 Coquimbo Unido vs Union La Calera ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783881077-0-0-7f4b463ed21d04b76508086c7aa78dfd
 
