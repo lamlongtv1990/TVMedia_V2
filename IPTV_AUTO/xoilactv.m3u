@@ -1,7 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 6
-# Generated: 2026-07-12 14:31:04 (GMT+7)
+# Total streams: 4
+# Generated: 2026-07-12 15:31:08 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:30 Gold Coast Knights vs Brisbane City ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -11,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel8.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:30 Gold Coast Knights vs Brisbane City ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783841460-0-0-7bc8a9d4dfefb0cad524b316e0106620
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783845066-0-0-12cc19fab04d110c6b8a2b352c904b1e
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",14:00 Queensland Lions SC vs Eastern Suburbs ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,15 +21,5 @@ https://live2.pro2cdnlive.com/live/channel7.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",14:00 Queensland Lions SC vs Eastern Suburbs ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783841461-0-0-4d4c7f0bcb9c892107218a986ec5cb8f
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Changchun Xidu vs Dalian Yingbo B ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel27.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Changchun Xidu vs Dalian Yingbo B ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001783841463-0-0-f138dd3eaa2f4c01f2ca35ab3ceb0aa6
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783845067-0-0-66bfea826c7410f854dfd9d254960281
 
