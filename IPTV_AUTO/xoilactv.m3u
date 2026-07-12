@@ -1,27 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
 # Total streams: 12
-# Generated: 2026-07-12 17:31:12 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 Yangpyeong vs Jeonbuk Hyundai II ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel23.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 Yangpyeong vs Jeonbuk Hyundai II ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783852264-0-0-2f591719babae9e0602d0bd0fe613ab9
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 Changwon City vs Chuncheon Citizen ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel17.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 Changwon City vs Chuncheon Citizen ngày 12/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783852265-0-0-3fba44650e76ec97d1d7c22f018db194
+# Generated: 2026-07-12 18:31:12 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Seoul FC vs Gangwon FC ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel5.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Seoul FC vs Gangwon FC ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel5.flv?auth_key=3000001783852267-0-0-af1cbe1cf95df021bdf425b99db6a9d1
+https://live3.procdnlive.com/livecdn/channel5.flv?auth_key=3000001783855864-0-0-de34185d6e3cbbb30fab243e8173d624
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Jeju SK FC vs Daejeon Citizen ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel6.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Jeju SK FC vs Daejeon Citizen ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783852268-0-0-8d973be6eb8729e65de471b34198466e
+https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783855865-0-0-08b07af933f258993a50a5780c8f15ef
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Incheon United vs FC Anyang ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +31,7 @@ https://live2.pro2cdnlive.com/live/channel11.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Incheon United vs FC Anyang ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783852270-0-0-8e23c411f379ee554265ac7e372d9a30
+https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783855867-0-0-ddc1604e7cea0c146587064796ae3fd9
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Chungnam Asan vs Gyeongnam FC ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,5 +41,25 @@ https://live2.pro2cdnlive.com/live/channel4.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Chungnam Asan vs Gyeongnam FC ngày 12/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783852271-0-0-8ae9a855d6eff89c9cb9990116a23da7
+https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783855868-0-0-9f20069892a755ebb479410587454d43
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Busan I Park vs Gimpo FC ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel8.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 Busan I Park vs Gimpo FC ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783855870-0-0-bd9c08ef2cc07f7dad8496faec584a26
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Shenzhen Juniors vs Heilongjiang Ice ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel10.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Shenzhen Juniors vs Heilongjiang Ice ngày 12/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783855871-0-0-33d5a1a0c39821d8f82826ff4bd27993
 
