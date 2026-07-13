@@ -1,27 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 14
-# Generated: 2026-07-13 22:31:30 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",21:00 Ural Oblast II vs Torpedo Moscow ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel18.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",21:00 Ural Oblast II vs Torpedo Moscow ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001783956681-0-0-34a1c204f91ebfd4d21e10231f1c05dd
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",21:00 Chelyabinsk vs SKA Khabarovsk ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel7.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",21:00 Chelyabinsk vs SKA Khabarovsk ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783956683-0-0-8ba9594948261fae376fc71e2f51bbdf
+# Total streams: 10
+# Generated: 2026-07-13 23:31:27 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",22:30 Wolfsberger AC vs FC Hradec Králové ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +11,7 @@ https://live2.streambylivepulse.com/live/channel23.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",22:30 Wolfsberger AC vs FC Hradec Králové ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783956684-0-0-1d4fe414a58c94770d1f3ea01f966c9b
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783960275-0-0-10d08f64c3f5304636ed6b817656c7b8
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 NK Osijek vs FC Neftci Baku ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,17 +21,7 @@ https://live2.streambylivepulse.com/live/channel17.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 NK Osijek vs FC Neftci Baku ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783956686-0-0-329132bbcf96aa5db1142cb67ef10d6b
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 SK Sigma Olomouc vs Shabab Al Ahli ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel20.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 SK Sigma Olomouc vs Shabab Al Ahli ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001783956687-0-0-2310779cb3dae6ffe856418ad64d9ed7
+https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783960278-0-0-32c9c5a71c20bc7b494787dbb7ae8413
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Arsenal Tula vs Tekstilshchik Ivanovo ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,7 +31,7 @@ https://live2.streambylivepulse.com/live/channel16.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Arsenal Tula vs Tekstilshchik Ivanovo ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001783956688-0-0-6ece0e460d8b71b1493b1e20e7b10654
+https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001783960281-0-0-d5090f91b46ed5e89f9152596c02807d
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -71,5 +41,15 @@ https://live2.streambylivepulse.com/live/channel11.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783956690-0-0-002eeda0134d389f1ea4900604818f47
+https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783960283-0-0-bdcde6c241ffc362c0e3d697e744e865
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel9.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783960286-0-0-46d03a6d9bec410e99dc93265419b903
 
