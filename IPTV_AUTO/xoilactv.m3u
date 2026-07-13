@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 10
-# Generated: 2026-07-13 23:31:27 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:30 Wolfsberger AC vs FC Hradec Králové ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel23.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:30 Wolfsberger AC vs FC Hradec Králové ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783960275-0-0-10d08f64c3f5304636ed6b817656c7b8
+# Total streams: 8
+# Generated: 2026-07-14 00:31:34 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 NK Osijek vs FC Neftci Baku ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +11,7 @@ https://live2.streambylivepulse.com/live/channel17.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 NK Osijek vs FC Neftci Baku ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783960278-0-0-32c9c5a71c20bc7b494787dbb7ae8413
+https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783963868-0-0-1105ff939390e189460204c0d597e133
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Arsenal Tula vs Tekstilshchik Ivanovo ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +21,7 @@ https://live2.streambylivepulse.com/live/channel16.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Arsenal Tula vs Tekstilshchik Ivanovo ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001783960281-0-0-d5090f91b46ed5e89f9152596c02807d
+https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001783963880-0-0-8296df3fdac92b4ade580e1f63095ad5
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +31,7 @@ https://live2.streambylivepulse.com/live/channel11.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783960283-0-0-bdcde6c241ffc362c0e3d697e744e865
+https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783963892-0-0-2dc4a50aa42ca704f513d949fa248ddf
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,5 +41,5 @@ https://live2.streambylivepulse.com/live/channel9.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783960286-0-0-46d03a6d9bec410e99dc93265419b903
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783963894-0-0-5d398b1693cbf22ae298cfa85c7b781c
 
