@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
 # Total streams: 12
-# Generated: 2026-07-13 16:31:14 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",15:30 SHB Đà Nẵng U21 vs Công An Hà Nội U21 ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel12.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",15:30 SHB Đà Nẵng U21 vs Công An Hà Nội U21 ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783935064-0-0-cb6af1bf690dc139d5a94f67324cf167
+# Generated: 2026-07-13 17:31:18 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:45 Nữ Campuchia vs Nữ Timor Leste ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel6.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:45 Nữ Campuchia vs Nữ Timor Leste ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783935066-0-0-ee65dc900e18e301ee0f0cfcac3f0d17
+https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783938667-0-0-be200de6430aa33e0d5f5ca02d069219
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:00 Adelaide Blue  vs Modbury Jets ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel7.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:00 Adelaide Blue  vs Modbury Jets ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783935068-0-0-6967761cf7629c2387358f84e1eaa48e
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783938669-0-0-dfda045d2a0758bad8498ea934befeb3
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 FC Bulleen Lions vs Brunswick City ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +31,7 @@ https://live2.pro2cdnlive.com/live/channel22.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",17:30 FC Bulleen Lions vs Brunswick City ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783935069-0-0-468864f7e5d6c0e8ce284f2ff13b0622
+https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783938671-0-0-56e41a41e7f298eae4a79abe2e502695
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Shanghai Jiading vs Dongguan Guanlian ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +41,7 @@ https://live2.pro2cdnlive.com/live/channel19.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Shanghai Jiading vs Dongguan Guanlian ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel19.flv?auth_key=3000001783935071-0-0-a04fe09af7e4cee2fec93fc9f9fca01d
+https://live3.procdnlive.com/livecdn/channel19.flv?auth_key=3000001783938673-0-0-c2c2c9306b0a03f0e6a3ee409b463c8c
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Bergisch Gladbach 09 vs FC Köln ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,5 +51,15 @@ https://live2.pro2cdnlive.com/live/channel13.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Bergisch Gladbach 09 vs FC Köln ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783935073-0-0-f6885d90e5d7ba1a67761ac321bb65ba
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783938675-0-0-34447cd828aa6e8c99a1ad6302185dba
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 HNK Gorica vs Goztepe ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel10.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 HNK Gorica vs Goztepe ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783938677-0-0-e09c0b38e56d008b2e2d1d31a66153b1
 
