@@ -1,27 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 8
-# Generated: 2026-07-14 00:31:34 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 NK Osijek vs FC Neftci Baku ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel17.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 NK Osijek vs FC Neftci Baku ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783963868-0-0-1105ff939390e189460204c0d597e133
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Arsenal Tula vs Tekstilshchik Ivanovo ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel16.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:30 Arsenal Tula vs Tekstilshchik Ivanovo ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001783963880-0-0-8296df3fdac92b4ade580e1f63095ad5
+# Total streams: 6
+# Generated: 2026-07-14 01:31:12 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +11,7 @@ https://live2.streambylivepulse.com/live/channel11.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783963892-0-0-2dc4a50aa42ca704f513d949fa248ddf
+https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783967468-0-0-e5c045875d0a43fea5bc04be11d360df
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,5 +21,15 @@ https://live2.streambylivepulse.com/live/channel9.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783963894-0-0-5d398b1693cbf22ae298cfa85c7b781c
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783967470-0-0-2a9488db49febd530e32e58f71142de4
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",02:15 Breidablik vs Keflavik ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel21.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",02:15 Breidablik vs Keflavik ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783967472-0-0-c573398f6ef1820a7f94a521d25aae18
 
