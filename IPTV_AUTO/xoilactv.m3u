@@ -1,67 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 18
-# Generated: 2026-07-13 06:31:15 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Carolina Core vs Chattanooga ngày 13/07/2020
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel10.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",04:00 Carolina Core vs Chattanooga ngày 13/07/2020
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001783899061-0-0-a74e7b6c37e5bb9de20e5ccb605c0977
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",04:30 D. Concepcion vs Puerto Montt ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel23.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",04:30 D. Concepcion vs Puerto Montt ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001783899063-0-0-09258d08cc8fa9dfef8c04bfb0153d8f
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Connecticut United FC vs Toronto FC II ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel13.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Connecticut United FC vs Toronto FC II ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783899065-0-0-c6a5f556167ed2f8cb436a43c1ee44d4
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cincinnati II vs Orlando City B ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel8.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cincinnati II vs Orlando City B ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783899066-0-0-e1c6bf4e96560e0a34be45256637b54e
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 CRB AL vs Goiás EC ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel4.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 CRB AL vs Goiás EC ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783899068-0-0-45423f7229486bfd47a2996ac62dba8e
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",06:10 Sport Emelec vs Barcelona SC ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.pro2cdnlive.com/live/channel14.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",06:10 Sport Emelec vs Barcelona SC ngày 13/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783899069-0-0-ba3b031ff13728cd189d3a331a06a9dc
+# Total streams: 16
+# Generated: 2026-07-13 07:31:10 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 Real Tomayapo vs In. Petrolero ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -71,7 +11,7 @@ https://live2.pro2cdnlive.com/live/channel7.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 Real Tomayapo vs In. Petrolero ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783899071-0-0-8092ac6550fc68b25643c812d43011d5
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001783902659-0-0-debb516d3d2893053d3da036a826dcd9
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 SJ Earthquakes (R) vs Tacoma Defiance ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -81,7 +21,7 @@ https://live2.pro2cdnlive.com/live/channel15.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 SJ Earthquakes (R) vs Tacoma Defiance ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel15.flv?auth_key=3000001783899072-0-0-f73cc6c0fc11d7a8520d2c11d8eca106
+https://live3.procdnlive.com/livecdn/channel15.flv?auth_key=3000001783902660-0-0-280cd0a333760de9ef2e8d338979c384
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 O.Higgins vs Nublense ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -91,5 +31,55 @@ https://live2.pro2cdnlive.com/live/channel11.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 O.Higgins vs Nublense ngày 13/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783899074-0-0-9352ad8878daed106e9f4895d735039d
+https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783902661-0-0-abe723a062c79218a21fe81f5865096d
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:10 Sport Emelec vs Barcelona SC ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel14.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:10 Sport Emelec vs Barcelona SC ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783902663-0-0-577c54458905a8590d7cc63efa34092f
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:30 Austin FC II vs Minnesota Utd II ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel6.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:30 Austin FC II vs Minnesota Utd II ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001783902664-0-0-489209af7564d6df812a157da9a7dbfa
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 San Juan SC vs Marin FC Legends ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel12.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",09:00 San Juan SC vs Marin FC Legends ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001783902666-0-0-2b9e1d8a8f566ee6ff7d0177b614cd24
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 New Zealand U16 vs Solomon Islands U16 ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel14.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 New Zealand U16 vs Solomon Islands U16 ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783902668-0-0-eb9f1c93b073cfc9ac7148ff81f55d4c
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥14:00 Gangwon FC vs Việt Nam ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.pro2cdnlive.com/live/channel1.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥14:00 Gangwon FC vs Việt Nam ngày 13/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel1.flv?auth_key=3000001783902670-0-0-10069626c5efcea7a3ae65d46623642a
 
