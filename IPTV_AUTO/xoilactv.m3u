@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 16
-# Generated: 2026-07-14 04:31:27 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:15 Vestri vs Fylkir ngày 14/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel28.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",03:15 Vestri vs Fylkir ngày 14/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783978272-0-0-2b300b8b2ed0a592a3d13d57dd1f7e5a
+# Total streams: 14
+# Generated: 2026-07-14 05:31:13 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cerro Largo vs Defensor SC ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +11,7 @@ https://live2.streambylivepulse.com/live/channel9.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cerro Largo vs Defensor SC ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783978274-0-0-0c1db05cf4c9f1e309c52a94c521b4d1
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783981864-0-0-263f307ae2ba3673d96ae8ca9d20bfe5
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 America MG vs Londrina PR ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +21,7 @@ https://live2.streambylivepulse.com/live/channel8.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 America MG vs Londrina PR ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783978276-0-0-ee96c05bc42b7f042691fcded9618bf2
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783981865-0-0-e4f330d88b7c9a68a4d9a9419765023f
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 Ceara vs Athletic Club ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +31,7 @@ https://live2.streambylivepulse.com/live/channel14.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 Ceara vs Athletic Club ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783978278-0-0-70fc3338c2d44011aa28f04c67abafea
+https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783981866-0-0-42d368d9b237fe6934be847759e0dd00
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Atletico Atlanta vs Colegiales ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +41,7 @@ https://live2.streambylivepulse.com/live/channel13.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Atletico Atlanta vs Colegiales ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783978280-0-0-0fb91554c2cae151faca0ad1c11a886d
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783981867-0-0-06605fa4e0c5b0f413e94478216d60b8
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:30 Cavalry FC vs Vancouver Whitecaps ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,7 +51,7 @@ https://live2.streambylivepulse.com/live/channel22.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",08:30 Cavalry FC vs Vancouver Whitecaps ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783978282-0-0-ed842bd068ae7afb04f205b7f28801a0
+https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783981869-0-0-0d3b2217b21c1e05e20abf42e2bc5c45
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 Nữ Shanghai Shenhua vs Nữ Henan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -71,7 +61,7 @@ https://live2.streambylivepulse.com/live/channel4.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 Nữ Shanghai Shenhua vs Nữ Henan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783978284-0-0-b3c1dd7dc9508f247597897a55b12484
+https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001783981871-0-0-b83166068390766d17b354a6e431be4c
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 Nữ Shandong Jinghua vs Nữ Yongchuan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -81,5 +71,5 @@ https://live2.streambylivepulse.com/live/channel17.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 Nữ Shandong Jinghua vs Nữ Yongchuan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783978286-0-0-7ef8dca2d0f8de8faa9a56e20abda0fb
+https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001783981873-0-0-dbfcdfee8fd791c148246e016a3f8dad
 
