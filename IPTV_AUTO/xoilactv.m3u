@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 4
-# Generated: 2026-07-14 02:31:16 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel9.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783971073-0-0-9d18215ab64614b506a41bd75ce7a768
+# Total streams: 14
+# Generated: 2026-07-14 03:31:23 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",02:15 Breidablik vs Keflavik ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,5 +11,65 @@ https://live2.streambylivepulse.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",02:15 Breidablik vs Keflavik ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783971076-0-0-438f285bee559816bd8a8348b89d76ec
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783974671-0-0-80644f5c95e35313d091e5070a7e1126
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",03:15 Vestri vs Fylkir ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel28.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",03:15 Vestri vs Fylkir ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783974673-0-0-e7524ea52d202fc12842fed747732313
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cerro Largo vs Defensor SC ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel9.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 Cerro Largo vs Defensor SC ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783974675-0-0-5a56c215fbbd533473c8d03c6324ddbe
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 America MG vs Londrina PR ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel8.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",05:00 America MG vs Londrina PR ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783974677-0-0-f5756c294900fe284f7843d80f77a7ba
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 Ceara vs Athletic Club ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel14.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",06:30 Ceara vs Athletic Club ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783974678-0-0-a48c4753fa2cccd2204b3f8a9767b9bd
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Atletico Atlanta vs Colegiales ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel13.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Atletico Atlanta vs Colegiales ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783974680-0-0-f2700c09cb4e7993e6e015a8a0f498a0
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",08:30 Cavalry FC vs Vancouver Whitecaps ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel22.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",08:30 Cavalry FC vs Vancouver Whitecaps ngày 14/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783974682-0-0-b8ca45c78de2188495ba72560c9a86a5
 
