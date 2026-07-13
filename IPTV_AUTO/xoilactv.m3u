@@ -1,17 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 6
-# Generated: 2026-07-14 01:31:12 (GMT+7)
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel11.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",00:00 Djurgardens vs Halmstads ngày 14/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001783967468-0-0-e5c045875d0a43fea5bc04be11d360df
+# Total streams: 4
+# Generated: 2026-07-14 02:31:16 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -21,7 +11,7 @@ https://live2.streambylivepulse.com/live/channel9.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",01:00 Nữ Gimnasia LP vs Nữ Huracan ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783967470-0-0-2a9488db49febd530e32e58f71142de4
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783971073-0-0-9d18215ab64614b506a41bd75ce7a768
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",02:15 Breidablik vs Keflavik ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,5 +21,5 @@ https://live2.streambylivepulse.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",02:15 Breidablik vs Keflavik ngày 14/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783967472-0-0-c573398f6ef1820a7f94a521d25aae18
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783971076-0-0-438f285bee559816bd8a8348b89d76ec
 
