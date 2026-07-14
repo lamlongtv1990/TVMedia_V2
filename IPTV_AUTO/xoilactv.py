@@ -16,7 +16,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # ============================================
 # CẤU HÌNH
 # ============================================
-BASE_URL = "https://xoilacz.vip"
+BASE_URL = "https://xoilac86tv.mobi"
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
 
