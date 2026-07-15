@@ -85,7 +85,7 @@ def build_dynamic_headers():
     }
 
 # ============================================
-# HÀM LẤY URL STREAM TỪ 1 LINK - ĐÃ SỬA
+# HÀM LẤY URL STREAM TỪ 1 LINK
 # ============================================
 def extract_url_stream_from_link(link_url):
     try:
@@ -95,72 +95,41 @@ def extract_url_stream_from_link(link_url):
             return None
         
         soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Tìm trong tất cả script
         scripts = soup.select('script')
+        
         for script in scripts:
             content = script.string if script.string else script.get_text()
-            if content:
-                # Thử nhiều pattern khác nhau
-                patterns = [
-                    r'var\s+urlStream\s*=\s*["\']([^"\']+)["\'];',
-                    r'urlStream\s*:\s*["\']([^"\']+)["\']',
-                    r'streamUrl\s*=\s*["\']([^"\']+)["\']',
-                    r'videoUrl\s*=\s*["\']([^"\']+)["\']'
-                ]
-                for pattern in patterns:
-                    match = re.search(pattern, content)
-                    if match:
-                        return match.group(1)
-        
-        # Nếu không tìm thấy trong script, thử tìm trong iframe
-        iframe = soup.select_one('iframe[src*="m3u8"], iframe[src*=".m3u8"]')
-        if iframe:
-            src = iframe.get('src')
-            if src:
-                return src
-                
+            if content and 'var urlStream' in content:
+                match = re.search(r'var\s+urlStream\s*=\s*["\']([^"\']+)["\'];', content)
+                if match:
+                    return match.group(1)
         return None
-    except Exception as e:
-        print(f"⚠️ Lỗi extract_url_stream_from_link: {e}")
+    except Exception:
         return None
 
 # ============================================
-# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT - ĐÃ SỬA
+# HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT
 # ============================================
 def extract_stream_links(url):
     try:
         headers = build_dynamic_headers()
         response = requests.get(url, headers=headers, timeout=30)
         if response.status_code != 200:
-            print(f"⚠️ Không truy cập được {url}, status: {response.status_code}")
             return []
         
         soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Debug: In ra title để kiểm tra
-        title_tag = soup.find('title')
-        if title_tag:
-            print(f"   📄 Đang xử lý: {title_tag.string}")
-        
-        # Tìm script chứa list_stream
         scripts = soup.select('script')
+        
         list_stream_script = None
         for script in scripts:
             html_content = script.string if script.string else script.get_text()
-            if html_content and 'list_stream' in html_content:
+            if html_content and 'var list_stream' in html_content:
                 list_stream_script = html_content
                 break
         
         if not list_stream_script:
-            # Thử tìm trực tiếp link stream trong HTML
-            stream_links = re.findall(r'https?://[^\s"\']+\.m3u8[^\s"\']*', response.text)
-            if stream_links:
-                print(f"   ✅ Tìm thấy {len(stream_links)} link m3u8 trong HTML")
-                return list(dict.fromkeys(stream_links))
             return []
         
-        # Parse list_stream
         pattern = r'var\s+list_stream\s*=\s*(\[.*?\]);'
         match = re.search(pattern, list_stream_script, re.DOTALL)
         if not match:
@@ -170,10 +139,6 @@ def extract_stream_links(url):
         try:
             list_stream = json.loads(list_stream_str)
         except json.JSONDecodeError:
-            # Thử tìm link trực tiếp
-            stream_links = re.findall(r'https?://[^\s"\']+\.m3u8[^\s"\']*', list_stream_str)
-            if stream_links:
-                return list(dict.fromkeys(stream_links))
             return []
         
         final_urls = []
@@ -181,14 +146,10 @@ def extract_stream_links(url):
             if isinstance(item, list) and len(item) > 0:
                 stream_url = str(item[0]).replace('\\/', '/')
                 url_stream = extract_url_stream_from_link(stream_url)
-                if url_stream:
-                    final_urls.append(url_stream)
-                else:
-                    final_urls.append(stream_url)
+                final_urls.append(url_stream if url_stream else stream_url)
         
         return list(dict.fromkeys(final_urls))
-    except Exception as e:
-        print(f"⚠️ Lỗi extract_stream_links: {e}")
+    except Exception:
         return []
 
 # ============================================
@@ -211,9 +172,8 @@ def get_live_status_from_title(title):
         month = int(date_match.group(2))
         year = int(date_match.group(3))
         
-        # Lấy thời gian Việt Nam
         match_time = datetime(year, month, day, hour, minute)
-        now = get_vietnam_time().replace(tzinfo=None)  # Bỏ timezone để so sánh
+        now = datetime.now()
         
         if now < match_time:
             return 'comming'
@@ -221,6 +181,7 @@ def get_live_status_from_title(title):
             return 'living'
         else:
             return 'end'
+            
     except Exception:
         return 'comming'
 
@@ -249,7 +210,7 @@ def extract_date_from_title(title):
         return ""
 
 # ============================================
-# HÀM PARSE 1 MATCH - ĐÃ SỬA
+# HÀM PARSE 1 MATCH - ĐÃ SỬA CÁCH LẤY TITLE
 # ============================================
 def parse_match_from_element(item):
     link = item.select_one('a.redirectPopup')
@@ -257,9 +218,29 @@ def parse_match_from_element(item):
         return None
     
     href = link.get('href', '')
+    
+    # SỬA: Lấy title từ thuộc tính title của thẻ a
     title = link.get('title', '')
     
-    # SỬA: Tìm đúng phần tử chứa số BLV
+    # Nếu title rỗng, thử lấy từ aria-label của div grid-match
+    if not title:
+        grid_match = item.select_one('.grid-match')
+        if grid_match:
+            title = grid_match.get('aria-label', '')
+    
+    # Nếu vẫn rỗng, thử lấy từ data-league và tên đội
+    if not title:
+        league = item.get('data-league', '')
+        home_team = item.select_one('.gmd-home_team .team-name-group p')
+        away_team = item.select_one('.gmd-away_team .team-name-group p')
+        if home_team and away_team and league:
+            title = f"{league}: {home_team.text.strip()} vs {away_team.text.strip()}"
+    
+    # Nếu vẫn rỗng, bỏ qua
+    if not title:
+        return None
+    
+    # Tìm số BLV
     streamer_div = item.select_one('.gmd-match-footer__streamer')
     blv_count = 0
     
@@ -273,7 +254,6 @@ def parse_match_from_element(item):
                     blv_count = 0
                 break
     
-    # Nếu không có BLV, bỏ qua
     if blv_count == 0:
         return None
     
@@ -291,17 +271,12 @@ def parse_match_from_element(item):
         'blv_count': blv_count
     }
     
-    # Lấy link stream
     if href:
         full_url = actual_base + href
-        print(f"   🔗 Đang lấy stream từ: {full_url}")
         stream_links = extract_stream_links(full_url)
         if stream_links:
             for i, stream_url in enumerate(stream_links, 1):
                 match[f'link{i}'] = stream_url
-            print(f"   ✅ Đã lấy {len(stream_links)} link stream")
-        else:
-            print(f"   ⚠️ Không lấy được stream nào")
     
     return match
 
@@ -383,7 +358,7 @@ def fetch_pages_until(page_target):
     }
 
 # ============================================
-# TẠO FILE M3U
+# TẠO FILE M3U - GIỮ NGUYÊN CẤU TRÚC
 # ============================================
 def create_m3u_file(matches, filename="tv.m3u"):
     try:
@@ -397,10 +372,13 @@ def create_m3u_file(matches, filename="tv.m3u"):
                     time_str = extract_time_from_title(match['title'])
                     date_str = extract_date_from_title(match['title'])
                     
-                    clean_title = re.sub(r'lúc\s+\d{2}:\d{2}\s+', '', match['title'])
+                    display_title = match['title']
+                    
+                    clean_title = re.sub(r'lúc\s+\d{2}:\d{2}\s+', '', display_title)
                     clean_title = re.sub(r'ngày\s+\d{2}/\d{2}/\d{4}', '', clean_title).strip()
                     
                     new_title = ""
+                    
                     if match['hot']:
                         new_title += "🔥"
                     
