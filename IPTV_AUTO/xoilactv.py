@@ -291,21 +291,24 @@ def fetch_page(page):
         print(f"📤 GET page {page}: {url}")
         headers = build_dynamic_headers()
         # ⚠️ THÊM DÒNG NÀY
-        headers["accept"] = "application/json, text/plain, */*"
+        headers["accept-encoding"] = "gzip, deflate, br"
         
-        response = requests.get(url, headers=headers, timeout=30)
+        # ⚠️ SỬA: dùng stream=True để xử lý nén tự động
+        response = requests.get(url, headers=headers, stream=True, timeout=30)
         
         if response.status_code == 200:
-            # Kiểm tra nội dung trước khi parse JSON
-            if not response.text.strip():
+            # ⚠️ SỬA: dùng response.content (đã được giải nén tự động)
+            content = response.content.decode('utf-8')
+            
+            if not content.strip():
                 print(f"⚠️ Response rỗng")
                 return None
                 
             try:
-                data = response.json()
+                data = json.loads(content)
             except json.JSONDecodeError as e:
                 print(f"❌ JSON decode error: {e}")
-                print(f"📄 Response preview: {response.text[:200]}...")
+                print(f"📄 Response preview: {content[:200]}...")
                 return None
                 
             pagination = data.get('data', {}).get('pagination', {})
