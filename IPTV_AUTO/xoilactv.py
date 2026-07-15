@@ -42,8 +42,8 @@ def get_base_url_from_github():
 # ============================================
 # CẬP NHẬT BASE_URL
 # ============================================
-BASE_URL = get_base_url_from_github()
-
+#BASE_URL = get_base_url_from_github()
+BASE_URL = "https://yellow-bar-d6d1.lockerzlong.workers.dev"
 # ============================================
 # HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
 # ============================================
