@@ -1,7 +1,7 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 14
-# Generated: 2026-07-15 07:47:13 (GMT+7)
+# Total streams: 18
+# Generated: 2026-07-15 07:53:04 (GMT+7)
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Manta Fc Vs Delfin Sc ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -11,17 +11,27 @@ https://live2.streambylivepulse.com/live/channel21.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Manta Fc Vs Delfin Sc ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001784076407-0-0-4c836ebde01654bc3487b27eb81d3488
+https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001784076777-0-0-663bb182e836892647d0c70e00f2a98e
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Blooming Vs Gv San Jose ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xoilac.livebytexscorez.com/ajax/chanel/type/8/link/channel23
+https://live2.streambylivepulse.com/live/channel23.flv
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",07:00 Blooming Vs Gv San Jose ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001784076411-0-0-2370cb9421581303d47320ec42f640ac
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001784076777-0-0-4516d65e4b6e8d904573719fe9668d6f
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",10:30 New England Vs Ironbound Sc ngày 15/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel20.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",10:30 New England Vs Ironbound Sc ngày 15/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001784076778-0-0-68c006d12083aaa7522fed878be4f131
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 Samoa U16 Vs Fiji U16 ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -31,7 +41,7 @@ https://live2.streambylivepulse.com/live/channel20.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",13:00 Samoa U16 Vs Fiji U16 ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001784076416-0-0-c71a1630c87b2b8bf0e9db67599a491e
+https://live3.procdnlive.com/livecdn/channel20.flv?auth_key=3000001784076779-0-0-3149d97da9486b705bf7fe98b9c8712d
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",14:00 Kashima Antlers Vs Vegalta Sendai ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -41,7 +51,7 @@ https://live2.streambylivepulse.com/live/channel10.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",14:00 Kashima Antlers Vs Vegalta Sendai ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://xoilac.livebytexscorez.com/ajax/chanel/type/5/link/channel10
+https://live3.procdnlive.com/livecdn/channel10.flv?auth_key=3000001784076780-0-0-5dcaeb42599fd1be2c6286a84eb6b88a
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Guangzhou Zhicheng Vs Guizhou Xufengtang ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -51,7 +61,17 @@ https://live2.streambylivepulse.com/live/channel13.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Guangzhou Zhicheng Vs Guizhou Xufengtang ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784076423-0-0-9bf6be8699c9933f06c47d6c1f97791e
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784076781-0-0-0fefb37cb5e3729d7d421b428b993532
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Yokohama Marinos Vs Miyazaki ngày 15/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live2.streambylivepulse.com/live/channel27.flv
+
+#EXTINF:-1 group-title="Xôi Lạc Z TV",15:00 Yokohama Marinos Vs Miyazaki ngày 15/07/2026
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
+https://live3.procdnlive.com/livecdn/channel27.flv?auth_key=3000001784076782-0-0-31771e95f78c5c8b507bd9ebaac0064c
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:30 Cong An Ha Noi U21 Vs Dong Nai U21 ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -61,7 +81,7 @@ https://live2.streambylivepulse.com/live/channel7.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",15:30 Cong An Ha Noi U21 Vs Dong Nai U21 ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001784076428-0-0-2990522171ba594badd4c6bb357d3b35
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001784076782-0-0-4c65bf806cb1b066aab6ab1c04f8c3b1
 
 #EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 Oud Heverlee Vs Kvsk Lommel ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -71,5 +91,5 @@ https://live2.streambylivepulse.com/live/channel23.flv
 #EXTINF:-1 group-title="Xôi Lạc Z TV",16:00 Oud Heverlee Vs Kvsk Lommel ngày 15/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001784076432-0-0-56e3ad1b8ebae3951983a46d49a62ad4
+https://live3.procdnlive.com/livecdn/channel23.flv?auth_key=3000001784076783-0-0-a70f131e94c2a6e062c80b5c89f1a68b
 
