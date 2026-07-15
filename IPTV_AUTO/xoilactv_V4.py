@@ -40,8 +40,8 @@ def get_base_url_from_github():
         print(f"⚠️ Lỗi khi lấy BASE_URL: {e}, sử dụng URL mặc định")
         return "https://xoilacz.vip"
 
-#BASE_URL = get_base_url_from_github()
-BASE_URL = "https://yellow-bar-d6d1.lockerzlong.workers.dev"
+BASE_URL = get_base_url_from_github()
+
 # ============================================
 # HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
 # ============================================
