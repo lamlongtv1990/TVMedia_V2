@@ -3,7 +3,7 @@ name: Manual Run
 on:
   workflow_dispatch:
   repository_dispatch:
-    types: [trigger-xoilac-from-cronjob]  # 👈 THÊM DÒNG NÀY ĐỂ NHẬN TRIGGER TỪ CRON-JOB.ORG
+    types: [trigger-xoilac-from-cronjob]
 
 permissions:
   contents: write
@@ -19,9 +19,18 @@ jobs:
         with:
           python-version: '3.11'
       
+      - name: Cache pip packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('IPTV_AUTO/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 lxml brotli
+          cd IPTV_AUTO
+          pip install --cache-dir ~/.cache/pip -r requirements.txt
       
       - name: Run XoilacTV
         run: |
