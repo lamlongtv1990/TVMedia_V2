@@ -14,9 +14,11 @@ BASE_URL_SOURCE = "https://raw.githubusercontent.com/lamlongtv1990/TVMedia_V2/ma
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
 VIETNAM_TZ = timezone(timedelta(hours=7))
+
 def get_vietnam_time():
     """Lấy thời gian hiện tại theo múi giờ Việt Nam (UTC+7)"""
     return datetime.now(VIETNAM_TZ)
+
 # ============================================
 # HÀM LẤY BASE_URL TỪ GITHUB
 # ============================================
@@ -43,6 +45,7 @@ def get_base_url_from_github():
 # CẬP NHẬT BASE_URL
 # ============================================
 BASE_URL = get_base_url_from_github()
+
 # ============================================
 # HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
 # ============================================
@@ -69,13 +72,11 @@ def build_dynamic_headers():
     
     return {
         "accept": "application/json, text/plain, */*",
-        "accept-encoding": "gzip, deflate, br, zstd",
+        "accept-encoding": "gzip, deflate, br",
         "accept-language": "en-US,en;q=0.9,vi;q=0.8",
         "cache-control": "no-cache",
-        "origin": domain,
         "pragma": "no-cache",
         "priority": "u=1, i",
-        "referer": actual_url,
         "sec-ch-ua": '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
         "sec-ch-ua-mobile": "?0",
         "sec-ch-ua-platform": '"Windows"',
@@ -85,30 +86,29 @@ def build_dynamic_headers():
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
     }
 
-
 # ============================================
 # HÀM LẤY URL STREAM TỪ 1 LINK
 # ============================================
 def extract_url_stream_from_link(link_url):
     try:
         headers = build_dynamic_headers()
-        response = requests.get(link_url, headers=headers, timeout=30)
+        response = requests.get(link_url, headers=headers, stream=True, timeout=30)
         if response.status_code != 200:
             return None
         
-        soup = BeautifulSoup(response.text, 'html.parser')
+        content = response.content.decode('utf-8')
+        soup = BeautifulSoup(content, 'html.parser')
         scripts = soup.select('script')
         
         for script in scripts:
-            content = script.string if script.string else script.get_text()
-            if content and 'var urlStream' in content:
-                match = re.search(r'var\s+urlStream\s*=\s*["\']([^"\']+)["\'];', content)
+            script_content = script.string if script.string else script.get_text()
+            if script_content and 'var urlStream' in script_content:
+                match = re.search(r'var\s+urlStream\s*=\s*["\']([^"\']+)["\'];', script_content)
                 if match:
                     return match.group(1)
         return None
-    except Exception:
+    except Exception as e:
         return None
-
 
 # ============================================
 # HÀM LẤY STREAM LINKS TỪ TRANG CHI TIẾT
@@ -116,18 +116,19 @@ def extract_url_stream_from_link(link_url):
 def extract_stream_links(url):
     try:
         headers = build_dynamic_headers()
-        response = requests.get(url, headers=headers, timeout=30)
+        response = requests.get(url, headers=headers, stream=True, timeout=30)
         if response.status_code != 200:
             return []
         
-        soup = BeautifulSoup(response.text, 'html.parser')
+        content = response.content.decode('utf-8')
+        soup = BeautifulSoup(content, 'html.parser')
         scripts = soup.select('script')
         
         list_stream_script = None
         for script in scripts:
-            html_content = script.string if script.string else script.get_text()
-            if html_content and 'var list_stream' in html_content:
-                list_stream_script = html_content
+            script_content = script.string if script.string else script.get_text()
+            if script_content and 'var list_stream' in script_content:
+                list_stream_script = script_content
                 break
         
         if not list_stream_script:
@@ -154,7 +155,6 @@ def extract_stream_links(url):
         return list(dict.fromkeys(final_urls))
     except Exception:
         return []
-
 
 # ============================================
 # HÀM TÍNH TRẠNG THÁI LIVE TỪ TITLE
@@ -189,7 +189,6 @@ def get_live_status_from_title(title):
     except Exception:
         return 'comming'
 
-
 # ============================================
 # HÀM LẤY THỜI GIAN TỪ TITLE (HH:MM)
 # ============================================
@@ -202,7 +201,6 @@ def extract_time_from_title(title):
     except Exception:
         return "00:00"
 
-
 # ============================================
 # HÀM LẤY NGÀY TỪ TITLE (DD/MM/YYYY)
 # ============================================
@@ -214,7 +212,6 @@ def extract_date_from_title(title):
         return ""
     except Exception:
         return ""
-
 
 # ============================================
 # HÀM PARSE 1 MATCH
@@ -239,13 +236,13 @@ def parse_match_from_element(item):
                     blv_count = 0
                 break
     
+    # Chỉ lấy các match có BLV
     if blv_count == 0:
         return None
     
     live_status = get_live_status_from_title(title)
     
-    actual_base = get_actual_base_url()
-    actual_base = actual_base.rstrip('/')
+    actual_base = get_actual_base_url().rstrip('/')
     
     match = {
         'fid': item.get('data-fid', ''),
@@ -253,10 +250,23 @@ def parse_match_from_element(item):
         'live': live_status,
         'href': href,
         'title': title,
-        'random-streams': link.get('data-random-streams', '')
+        'random-streams': link.get('data-random-streams', ''),
+        'blv_count': blv_count
     }
     
-    if href:
+    # Lấy stream từ data-random-streams trước
+    random_streams = match['random-streams']
+    if random_streams:
+        streams = [s.strip() for s in random_streams.split(',') if s.strip()]
+        for i, stream_path in enumerate(streams, 1):
+            if stream_path:
+                full_url = actual_base + href.rstrip('/') + '/' + stream_path
+                stream_url = extract_url_stream_from_link(full_url)
+                if stream_url:
+                    match[f'link{i}'] = stream_url
+    
+    # Nếu không có stream từ random-streams, lấy từ trang chi tiết
+    if href and not any(k.startswith('link') for k in match.keys()):
         full_url = actual_base + href
         stream_links = extract_stream_links(full_url)
         if stream_links:
@@ -264,7 +274,6 @@ def parse_match_from_element(item):
                 match[f'link{i}'] = stream_url
     
     return match
-
 
 def parse_all_matches(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -278,7 +287,6 @@ def parse_all_matches(html_content):
     
     return matches
 
-
 # ============================================
 # LẤY 1 TRANG
 # ============================================
@@ -289,14 +297,9 @@ def fetch_page(page):
     try:
         print(f"📤 GET page {page}: {url}")
         headers = build_dynamic_headers()
-        # ⚠️ THÊM DÒNG NÀY
-        headers["accept-encoding"] = "gzip, deflate, br"
-        
-        # ⚠️ SỬA: dùng stream=True để xử lý nén tự động
         response = requests.get(url, headers=headers, stream=True, timeout=30)
         
         if response.status_code == 200:
-            # ⚠️ SỬA: dùng response.content (đã được giải nén tự động)
             content = response.content.decode('utf-8')
             
             if not content.strip():
@@ -327,6 +330,7 @@ def fetch_page(page):
     except Exception as e:
         print(f"❌ Exception: {e}")
         return None
+
 # ============================================
 # LẤY NHIỀU TRANG
 # ============================================
@@ -360,7 +364,6 @@ def fetch_pages_until(page_target):
         }
     }
 
-
 # ============================================
 # TẠO FILE M3U
 # ============================================
@@ -373,41 +376,22 @@ def create_m3u_file(matches, filename="tv.m3u"):
             for key in link_keys:
                 stream_url = match[key]
                 if stream_url and stream_url.startswith('http'):
-                    # Lấy thời gian và ngày từ title
                     time_str = extract_time_from_title(match['title'])
                     date_str = extract_date_from_title(match['title'])
                     
-                    # Tạo tiêu đề mới: 🔥⏳03:00 Brazil vs Na Uy ngày 06/07/2026
-                    display_title = match['title']
-                    
-                    # Thay thế "lúc HH:MM" và "ngày DD/MM/YYYY" bằng format mới
-                    # Xóa phần "lúc HH:MM" và "ngày DD/MM/YYYY" khỏi title
-                    clean_title = re.sub(r'lúc\s+\d{2}:\d{2}\s+', '', display_title)
+                    clean_title = re.sub(r'lúc\s+\d{2}:\d{2}\s+', '', match['title'])
                     clean_title = re.sub(r'ngày\s+\d{2}/\d{2}/\d{4}', '', clean_title).strip()
                     
-                    # Xây dựng tiêu đề mới
                     new_title = ""
                     
-                    # Thêm icon live
-                    #if match['live'] == 'living':
-                    #    new_title = "🔴"
-                    #elif match['live'] == 'end':
-                    #    new_title = "✅"
-                    #elif match['live'] == 'comming':
-                    #    new_title = "⏳"
-                    
-                    # Thêm hot
                     if match['hot']:
                         new_title += "🔥"
                     
-                    # Thêm thời gian
                     if time_str:
                         new_title += time_str + " "
                     
-                    # Thêm tên trận và ngày
                     new_title += clean_title
                     
-                    # Nếu chưa có ngày trong title, thêm vào
                     if date_str and date_str not in new_title:
                         new_title += f" ngày {date_str}"
                     
@@ -422,7 +406,7 @@ def create_m3u_file(matches, filename="tv.m3u"):
         if not all_streams:
             print("❌ No stream links found!")
             return False
-        # Lấy thời gian Việt Nam
+        
         vn_time = get_vietnam_time()
         time_str = vn_time.strftime('%Y-%m-%d %H:%M:%S')
         
@@ -446,7 +430,6 @@ def create_m3u_file(matches, filename="tv.m3u"):
     except Exception as e:
         print(f"❌ Error creating M3U: {e}")
         return False
-
 
 # ============================================
 # MAIN
@@ -477,14 +460,13 @@ def main():
         print("\n📋 Matches found:")
         for i, m in enumerate(matches[:5], 1):
             print(f"  {i}. {m['title']}")
-            print(f"     FID: {m['fid']}, Hot: {m['hot']}, Live: {m['live']}")
+            print(f"     FID: {m['fid']}, Hot: {m['hot']}, Live: {m['live']}, BLV: {m.get('blv_count', 0)}")
             if any(k.startswith('link') for k in m.keys()):
                 link_count = len([k for k in m.keys() if k.startswith('link')])
                 print(f"     Streams: {link_count}")
         
         print("\n📊 Creating M3U file...")
         create_m3u_file(matches, OUTPUT_FILE)
-        #purge_jsdelivr_cache()
         
         hot_count = sum(1 for m in matches if m['hot'])
         living_count = sum(1 for m in matches if m['live'] == 'living')
@@ -503,23 +485,5 @@ def main():
     else:
         print("❌ Failed to fetch data")
 
-#def purge_jsdelivr_cache():
-#    print("⚡ Đang gửi yêu cầu xóa cache đến jsDelivr CDN...")
-    # Thêm tiền tố /purge/ vào trước URL của jsDelivr để xóa cache ngay lập tức
-#    purge_url = "https://purge.jsdelivr.net/gh/lamlongtv1990/TVMedia_V2@main/IPTV_AUTO/xoilactv.m3u"
-#    
-#    try:
-#        res = requests.get(purge_url, timeout=10)
-#        if res.status_code == 200:
-#            data = res.json()
-#            if data.get('id'):
-#                print("✅ Ép jsDelivr xóa bản lưu cũ thành công!")
-#            else:
-#                print(f"⚠️ jsDelivr phản hồi lạ: {data}")
-#        else:
-#            print(f"⚠️ API Purge phản hồi mã lỗi: {res.status_code}")
-#    except Exception as e:
-#        print(f"❌ Không thể dọn dẹp cache: {e}")
-        
 if __name__ == "__main__":
     main()
