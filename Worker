@@ -7,7 +7,8 @@
                 "blv_only": true
                },
   "XoilacTV": {
-                "url": "https://xoilacz.vip"
+                "url": "https://xoilacz.vip",
+                "fetch_url" : "https://codebase64.org"
                },
   "Khandai": {
                 "api": "https://sv.khandai-a.xyz/api/v1/external/fixtures/unfinished"
