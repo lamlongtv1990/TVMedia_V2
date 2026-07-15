@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 # ============================================
 # CẤU HÌNH
 # ============================================
-BASE_URL_SOURCE = "https://raw.githubusercontent.com/lamlongtv1990/TVMedia_V2/main/IPTV_AUTO/domain_xoilactv"
+BASE_URL_SOURCE = "https://raw.githubusercontent.com/lamlongtv1990/TVMedia_V2/main/IPTV_AUTO/domain_xoilactv_v1"
 PER_PAGE = 20
 OUTPUT_FILE = "xoilactv.m3u"
 VIETNAM_TZ = timezone(timedelta(hours=7))
@@ -42,8 +42,7 @@ def get_base_url_from_github():
 # ============================================
 # CẬP NHẬT BASE_URL
 # ============================================
-#BASE_URL = get_base_url_from_github()
-BASE_URL = "https://yellow-bar-d6d1.lockerzlong.workers.dev"
+BASE_URL = get_base_url_from_github()
 # ============================================
 # HÀM LẤY URL THỰC TẾ SAU CHUYỂN HƯỚNG
 # ============================================
