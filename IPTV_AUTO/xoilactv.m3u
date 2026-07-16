@@ -1,205 +1,75 @@
 #EXTM3U
 # Xôi Lạc TV Playlist
-# Total streams: 40
-# Generated: 2026-07-15 22:31:26 (GMT+7)
+# Total streams: 14
+# Generated: 2026-07-16 18:31:19 (GMT+7)
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",16:45 Fulham United vs Cumberland  FC ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel1.flv?wsSecret=5472ea00e1717f3418774c490c2d060c&wsABSTime=1784172671
+https://live2.streambylivepulse.com/live/channel11.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",16:45 Fulham United vs Cumberland  FC ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel1.flv?auth_key=3000001784129471-0-0-c6751d6d51d16ec0c45f5ae48e5e3d08
+https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001784201470-0-0-e7d8903002051a28e29c348573def454
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel5.flv?wsSecret=50705a911d809148b712ad9dabd57cd6&wsABSTime=1784172671
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel5.flv?auth_key=3000001784129472-0-0-e39e733e167ea006198cdfcfc9dd7ea1
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel15.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel15.flv?auth_key=3000001784129472-0-0-5d333aa07ef07117fa958d4ffb108dbc
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel19.flv?wsSecret=8392eb32710d7c0a8c9fc88c33ac5c29&wsABSTime=1784172673
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel19.flv?auth_key=3000001784129473-0-0-180b8630ba2dbde4add386b341b4c238
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel16.flv?wsSecret=04fe9e6e507c528d33351ad708f9cb21&wsABSTime=1784172674
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel16.flv?auth_key=3000001784129474-0-0-df9e2a52392ef92f7c10957e11dd0b0a
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel4.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001784129475-0-0-54522b9d2484caab5db94629d635a3a6
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel11.flv?wsSecret=eca4006d8b64686440be5dbe11165d82&wsABSTime=1784172675
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel11.flv?auth_key=3000001784129475-0-0-2c2aef6915ef07323d5e0303a8c7c6c9
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Hà Nội U21 vs TP Hồ Chí Minh U21 ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
 https://live2.streambylivepulse.com/live/channel12.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Hà Nội U21 vs TP Hồ Chí Minh U21 ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001784129476-0-0-c5a8e16c2167f1081ece4ab576d7c1ed
+https://live3.procdnlive.com/livecdn/channel12.flv?auth_key=3000001784201472-0-0-73face410edf2ae86c166a2dd260b71a
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 PVF CAND U21 vs  An Giang U21 ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel13.flv?wsSecret=fca809822bdac3dd257e43ccd0aca7d1&wsABSTime=1784172676
+https://live2.streambylivepulse.com/live/channel19.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 PVF CAND U21 vs  An Giang U21 ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784129477-0-0-5b35d2147fa6eb704cab9f48eccaa370
+https://live3.procdnlive.com/livecdn/channel19.flv?auth_key=3000001784201473-0-0-e9ca6c4decdcee5ef8d0e0a222285de0
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Chongqing Handa vs BAA Macau ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel14.flv
+https://live2.streambylivepulse.com/live/channel6.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",18:00 Chongqing Handa vs BAA Macau ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001784129478-0-0-90458ec06acf5f5fa7f615c2fce029a7
+https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001784201474-0-0-0264b7bc49ee6af3d853af9fa18fdb6a
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Ekibastuzets vs Shakhter ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel8.flv?wsSecret=4a2ae49edce7d3429003405e3609b44e&wsABSTime=1784172678
+https://live2.streambylivepulse.com/live/channel8.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Ekibastuzets vs Shakhter ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001784129478-0-0-318dd6939593c16b4c4ea15cf3f769ad
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001784201475-0-0-c997fccc36f54f2e791a58833d85a854
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Copenhagen vs Viborg ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel17.flv
+https://live2.streambylivepulse.com/live/channel28.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",19:00 Copenhagen vs Viborg ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001784129479-0-0-89f127c910cf2e79ec2f55e827b52667
+https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001784201476-0-0-bbe782241c994c1048f7e13db5a2d57f
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",20:00 FK Arys vs Turan ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel18.flv?wsSecret=c3a83a16f33ca716c9aee7da67d6d4ff&wsABSTime=1784172679
+https://live2.streambylivepulse.com/live/channel7.flv
 
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
+#EXTINF:-1 group-title="Xôi Lạc Z TV",20:00 FK Arys vs Turan ngày 16/07/2026
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 #EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001784129480-0-0-2915a0e1954a4cf1afdb90e4464ef6f2
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel22.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001784129480-0-0-d45898836ac557be00bf2872f632c9ad
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live1.streambylivepulse.com/live/channel6.flv?wsSecret=f1c5999b63a9d4befea43122262c1fd6&wsABSTime=1784172680
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",🔥02:00 Anh vs Argentina ngày 16/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel6.flv?auth_key=3000001784129481-0-0-822448c3d75c4a9e703d7ec1bc573ca1
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",21:30 Malisheva vs Vllaznia Shkoder ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel1.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",21:30 Malisheva vs Vllaznia Shkoder ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel1.flv?auth_key=3000001784129482-0-0-b503180770aeeddd9cb28e4521818d95
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:00 Ordabasy vs Altay FK ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel13.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:00 Ordabasy vs Altay FK ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001784129483-0-0-86a174a51e959bd6361202617b7fe122
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:00 AFC Ajax vs VfL Bochum ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel18.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:00 AFC Ajax vs VfL Bochum ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel18.flv?auth_key=3000001784129484-0-0-3a28288f9871da63bfb19c1e4f55400a
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:00 Holstein Kiel vs Al-Ahli SFC ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel4.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",22:00 Holstein Kiel vs Al-Ahli SFC ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel4.flv?auth_key=3000001784129484-0-0-e7dbb60c627ccc02d5bb5636f9529e70
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 Rapid Wien vs Panathinaikos ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live2.streambylivepulse.com/live/channel17.flv
-
-#EXTINF:-1 group-title="Xôi Lạc Z TV",23:00 Rapid Wien vs Panathinaikos ngày 15/07/2026
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-#EXTVLCOPT:http-referrer=https://xlz.buzzscorelinez.com/
-https://live3.procdnlive.com/livecdn/channel17.flv?auth_key=3000001784129486-0-0-d28734333ec9f15d6fa80ad551b8e85e
+https://live3.procdnlive.com/livecdn/channel7.flv?auth_key=3000001784201478-0-0-b79230d60a384ff95e3536ebec05769e
 
