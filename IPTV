@@ -40,13 +40,8 @@ https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv5/master.m3u8
 #KODIPROP:inputstream.adaptive.license_key=a7c942778e874d43be92b8d0a0cd11b4:6d54358306571658ffdb952c6560688b
 https://livevlisctcdnw.seenow.vn/livesnv2/VTV5_HD/manifest.mpd
 
-#EXTINF:-1 tvg-id="VTV6" group-title="VTV" tvg-logo="https://dvtshophcm.com/iptv/logo/vtv6.png",VTV6
-https://live-vtv-aws.vtvdigital.vn/354hwVDwZuc5eBK7I_rRkg/1792173600/aws/vtv6_free/live/vtv6_720p/chunks.m3u8
-#EXTVLCOPT:http-user-agent=Dalvik/2.1.0
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=d8099c6c4ebc4ab88ce6f694f912e26d:ec57977de110995b8fc5d42e4ffdbcc9
-https://livebytatm.vtvprime.vn/live/data8/VTV6/Live_DASHDRM/VTV6.mpd
+#EXTINF:-1 tvg-id="vtv6hd" group-title="VTV" tvg-logo="https://r2.epg.io.vn/2026-09-17/8.png", VTV6
+https://vmttv.dpdns.org/tv360/?id=vtv6
 
 #EXTINF:-1 tvg-id="VTV7" group-title="VTV" tvg-logo="https://dvtshophcm.com/iptv/logo/vtv7.png",VTV7
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv7/master.m3u8
